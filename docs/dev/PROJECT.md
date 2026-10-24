@@ -18,6 +18,10 @@ The ghost is shown only when its entire projected footprint is in the lower half
 
 Bonus-gated penetrator activation lets the current piece pass through settled cells without destroying them. The final placement must be fully inside the board and non-overlapping; hard drop and ghost share the lowest valid landing. Hold is unavailable while penetration is active. Four-line clears grant one bonus, capped at three. Active penetrators are entirely white; regular pieces are not white. One side-panel symbol represents each available bonus.
 
+Six side-panel settings control ghost visibility, hard drop, next preview, hard-drop locking, general locking and Hold. Feature toggles apply immediately; locking-policy selections affect the next spawned piece. Disabling Hold preserves its stored piece. Restart retains selected settings.
+
+Settings live only in memory for the current page session and return to defaults on reload.
+
 ## Non-goals and intended outcome
 
 No accounts, multiplayer, online leaderboard, backend, touch controls, audio or level progression is required. Success is a complete responsive game with clear status, predictable rules and verified interactions across its enabled capabilities. The documents define intended behavior; they do not claim a delivered implementation.

@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 5, Session-only configuration; cursor DOCS-002 after authorized autoloop reset.
+- Current scope: pass 5, Session-only configuration; cursor DOCS-003.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -128,10 +128,6 @@ Prior pass completion: 56e46a0a1d93fe64b4fb751414aec194b5c6f4ea. Next scope: Pen
 - DOCS-007: layout.md, SHA-256 8eaaee4a7bae06765f2682a8eb4ba62ab4e0aa6c9fcb8b937bb39d3ff2ed86dc; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. PLAN-REVIEW-REPORT.md records strategy/layout QC, count rationale and protected phases.
 - DOCS-008: TASKS.md, SHA-256 3e82cb69197b310f3c9b856f221e6495d4eedbcd2054591ca343ac2a8987b5e0; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. TASKS-REVIEW-REPORT.md records derivation QC and protected prior task ranges. New task range: T-018–T-024.
 
-## Pending transitions
-
-Publish/read back the owning completion commit, then close/read back its same DOCS issue before dependent work. No implementation activation or package QC is authorized.
-
 ## Pass 4 result
 
 Current cumulative scope Penetrator mode is covered through DOCS-008; per-document gates are recorded above. PLAN/TASKS phases 1–4 retained with new phase 4 and task range T-018–T-024. Earlier phase blocks remain byte-identical. No new product decision supersedes the accepted cross-scope decisions. Publish/close issue 8 before reset or final stop; DOCS-009 remains unchecked.
@@ -139,3 +135,11 @@ Current cumulative scope Penetrator mode is covered through DOCS-008; per-docume
 ## Reset to pass 5
 
 Prior pass completion: d965435a74041b24ac94b2d0e928bf093a1acd3e. Next scope: Session-only configuration. Accepted autoloop authority; retain earlier decisions and strict protected ranges. No Git reset/deletion. Same issues 2–9 require open-state readback after publication.
+
+## Pass 5 document evidence
+
+- DOCS-002: PROJECT.md, SHA-256 a5339c8cfcf16ad598b74f860d773559fed3b90ff0e170fa690a2913c15e1528; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
+
+## Pending transitions
+
+Publish/read back the owning completion commit, then close/read back its same DOCS issue before dependent work. No implementation activation or package QC is authorized.
