@@ -2,13 +2,14 @@
 
 ## Current gate
 
-State: Ready for dependent layout only. No unresolved confirmed findings within this artifact review.
+State: Ready for dependent TASKS. No unresolved confirmed findings within this artifact review.
 
-Reviewed/governing identities: PLAN.md: SHA-256 d7ece063f4799e4595fbc62dbf76d9e8bf398314b34bd909046b5d5dfdde48f8; PROJECT.md: SHA-256 32a089f5781b37bc32722f518c1532d123583bacea0ab8462e3af91c0fab09e3; ARCHITECTURE.md: SHA-256 08094e319211a5993e9c79baea66ae90af046331223ecd47afd4ef706416a7fc; DECOMPOSITION.md: SHA-256 7050c9ddb63602bc4bf3e45a4e92540563a79e163f52fb1666b2dd3cfc1e08e6; SPEC.md: SHA-256 25e5eaa96608d2247cdd0f6f8c79b45d80fbb907b0044f6c50d5b14f7cb8a5da; SPEC-REVIEW-REPORT.md: SHA-256 5194c4b35d7facc1c26b4180c3edac4e90b34a22106b2af10c0fb99b7ad1e79b.
+Reviewed/governing identities: PLAN.md: SHA-256 d7ece063f4799e4595fbc62dbf76d9e8bf398314b34bd909046b5d5dfdde48f8; PROJECT.md: SHA-256 32a089f5781b37bc32722f518c1532d123583bacea0ab8462e3af91c0fab09e3; ARCHITECTURE.md: SHA-256 08094e319211a5993e9c79baea66ae90af046331223ecd47afd4ef706416a7fc; DECOMPOSITION.md: SHA-256 7050c9ddb63602bc4bf3e45a4e92540563a79e163f52fb1666b2dd3cfc1e08e6; SPEC.md: SHA-256 25e5eaa96608d2247cdd0f6f8c79b45d80fbb907b0044f6c50d5b14f7cb8a5da; SPEC-REVIEW-REPORT.md: SHA-256 5194c4b35d7facc1c26b4180c3edac4e90b34a22106b2af10c0fb99b7ad1e79b; layout.md: SHA-256 8eaaee4a7bae06765f2682a8eb4ba62ab4e0aa6c9fcb8b937bb39d3ff2ed86dc.
 
 Methods: owner semantic review plus executable local link/spacing/whitespace, contract-coverage, hierarchy and protected-range checks. These are document checks; product code/tests/browser behavior have not been executed. This is not whole-package DOCS-009 QC.
 
 ## Review history
+
 
 
 
@@ -88,6 +89,25 @@ Date: 2026-10-24. Reviewer: authoring agent acting as the focused document owner
 Sources: PLAN.md: SHA-256 d7ece063f4799e4595fbc62dbf76d9e8bf398314b34bd909046b5d5dfdde48f8; PROJECT.md: SHA-256 32a089f5781b37bc32722f518c1532d123583bacea0ab8462e3af91c0fab09e3; ARCHITECTURE.md: SHA-256 08094e319211a5993e9c79baea66ae90af046331223ecd47afd4ef706416a7fc; DECOMPOSITION.md: SHA-256 7050c9ddb63602bc4bf3e45a4e92540563a79e163f52fb1666b2dd3cfc1e08e6; SPEC.md: SHA-256 25e5eaa96608d2247cdd0f6f8c79b45d80fbb907b0044f6c50d5b14f7cb8a5da; SPEC-REVIEW-REPORT.md: SHA-256 5194c4b35d7facc1c26b4180c3edac4e90b34a22106b2af10c0fb99b7ad1e79b.
 
 Reviewed each phase’s coherent integrated outcome, contract coverage, entry dependencies, exclusions, demonstration and code-review/testing/report exits. Strategy is ready; layout coverage remains pending and TASKS generation is blocked until combined review.
+
+| Group | Delivery count | Excluded reviews | Scope/count assessment |
+| --- | --- | --- | --- |
+| Phase 1 | 2 milestones | One phase-review milestone | Two capability milestones keep core and usable browser integration visible; no padding to reach 3–5. |
+| Phase 2 | 2 milestones | One phase-review milestone | Two capability milestones keep core and usable browser integration visible; no padding to reach 3–5. |
+| Phase 3 | 1 milestones | One phase-review milestone | One narrow capability milestone is cohesive; fragmentation would add report overhead without independent player value. |
+
+Prior-pass PLAN/TASKS phase blocks are compared byte for byte before append; names, membership, order, dependencies and exits are retained. No flexible exception is used.
+
+
+Findings: no unresolved confirmed conformance issue in the reviewed scope. Numerical departures are assessed above rather than padded. Recheck: automated document validation plus source-level semantic review; evidence does not certify implementation.
+
+### Revision 5
+
+Date: 2026-10-24. Reviewer: authoring agent acting as the focused document owner. Scope: cumulative Conditional ghost visibility; combined.
+
+Sources: PLAN.md: SHA-256 d7ece063f4799e4595fbc62dbf76d9e8bf398314b34bd909046b5d5dfdde48f8; PROJECT.md: SHA-256 32a089f5781b37bc32722f518c1532d123583bacea0ab8462e3af91c0fab09e3; ARCHITECTURE.md: SHA-256 08094e319211a5993e9c79baea66ae90af046331223ecd47afd4ef706416a7fc; DECOMPOSITION.md: SHA-256 7050c9ddb63602bc4bf3e45a4e92540563a79e163f52fb1666b2dd3cfc1e08e6; SPEC.md: SHA-256 25e5eaa96608d2247cdd0f6f8c79b45d80fbb907b0044f6c50d5b14f7cb8a5da; SPEC-REVIEW-REPORT.md: SHA-256 5194c4b35d7facc1c26b4180c3edac4e90b34a22106b2af10c0fb99b7ad1e79b; layout.md: SHA-256 8eaaee4a7bae06765f2682a8eb4ba62ab4e0aa6c9fcb8b937bb39d3ff2ed86dc.
+
+Reviewed each phase’s coherent integrated outcome, contract coverage, entry dependencies, exclusions, demonstration and code-review/testing/report exits. Layout ownership matches design and has test/delivery paths.
 
 | Group | Delivery count | Excluded reviews | Scope/count assessment |
 | --- | --- | --- | --- |

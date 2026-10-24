@@ -17,6 +17,7 @@ Proposed source placement for [DECOMPOSITION](DECOMPOSITION.md) and [PLAN](PLAN.
 | package.json, lockfile, tsconfig.json, vite.config.ts | Pinned TypeScript/static build/test tooling; no backend |
 | README.md; docs/dev/reports/phases/ | Validated setup/play instructions; implementation milestone/phase evidence |
 | src/core/landing.ts; tests/core/landing.test.ts | Shared projection/drop landing; source/geometry/engine files own 7-bag, SRS, Hold and lock state |
+| src/view/ghost.ts; tests/view/ghost.test.ts | Pure ghost visibility predicate; board view consumes result |
 
 ## Boundaries and generated artifacts
 
