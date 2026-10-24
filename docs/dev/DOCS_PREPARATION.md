@@ -1,0 +1,70 @@
+# Main documentation preparation record
+
+## Current control
+
+- Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
+- Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
+- Current scope: pass 1, playable classic baseline; cursor DOCS-002 proposal preparation.
+- Authority: initialization and document preparation authorized; first PROJECT approval remains active. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
+- Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
+- Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
+- Publication: push and exact readback after each owned commit. Reporting: Explicit bootstrap, then Standard; Minimal and Explicit available.
+
+## Scope sequence
+
+1. **Playable classic baseline:** Falling tetrominoes, movement, rotation, gravity, line clearing, scoring, game over and restart. Keep the product minimal and coherent.
+2. **Gameplay enhancements:** Hold, ghost, 7-bag, wall kicks, hard drop and default full-gravity-interval lock delay, including after hard drop.
+3. **Conditional ghost visibility:** Hide projected ghosts in the upper half; show in the lower half, with a proposed whole-piece boundary rule below.
+4. **Penetrator mode:** Bonus-gated hotkey activation lasting until lock; traverse occupied cells without destruction; final placement fully inside and non-overlapping. Hard drop finds the lowest valid landing and visible ghost agrees. Four-line clears award one bonus, capped at three. Active pieces entirely white, regular pieces non-white; side panel displays one symbol per bonus and updates on earn/spend.
+5. **Session-only configuration:** Six side-panel settings: ghost hidden/dynamic/always; hard drop on/off; next preview on/off; hard-drop locking follows general/immediate; general locking failed-down/full interval; Hold on/off. Add next preview. No reload persistence.
+6. **Configuration persistence:** All six settings resolve independently valid explicit URL value, then valid cookie, then default. On player changes save cookie and update corresponding URL parameter. Save valid explicit URL values to cookies even when equal to defaults. Omitted parameters retain cookie values. Restore on reload/reopen.
+
+## Per-pass decisions
+
+All choices below are proposals developed during initial exploration, pending the first PROJECT approval. They are not attributed to the user. The supplied requirements in Scope sequence remain authoritative.
+
+| Origin / decision | Proposed resolution and rationale | Basis | Applicability / status |
+| --- | --- | --- | --- |
+| Pass 1 / platform | Desktop keyboard browser game; TypeScript, Canvas board and native HTML status/controls; static delivery without backend. DOM board remains a viable alternative; Canvas offers direct rendering with a separately testable engine. Avoid a framework without a concrete need. | Agent recommendation from seed and browser policy | All scopes; proposed |
+| Pass 1 / baseline | 10×20 visible board, seven tetromino types; basic clockwise rotation rejects collisions without wall kicks; simple random draws, immediate lock on failed downward movement, fixed gravity interval and line-clear scoring. No level system required. | Agent recommendation preserving minimal baseline | Pass 1; proposed; enhanced randomization and locking replace these in pass 2 |
+| Pass 1 / delivery and versions | First playable release 0.1.0; increment minor version for each later delivered capability phase, patches for compatible repairs. No product release or tag for documentation alone. Publish corresponding notes and release only after an authorized implementation phase verifies and integrates. | User release requirement plus agent version recommendation | All delivery phases; proposed |
+| Pass 2 / delay | Capture one current gravity interval at grounding. Grounded moves/rotations do not reset the deadline. Becoming airborne cancels it; later grounding starts a fresh interval. Manual downward attempts do not shorten interval locking. Hard drop preserves an existing grounded deadline or begins one at landing. | Agent recommendation avoids indefinite grounded resets and honors one full interval | Passes 2–6; proposed |
+| Pass 2 / Hold | Once per falling piece, reset on lock; empty Hold draws a new piece; swaps use normal spawn and blocked spawn ends game. | Agent recommendation | Passes 2–6; proposed |
+| Pass 3 / midline | Show only when every projected ghost cell lies in lower-half rows 10–19. Any cell in rows 0–9 hides the whole ghost; a straddling piece is hidden. | Agent recommendation supplies an unambiguous whole-piece boundary | Passes 3–6; proposed |
+| Pass 4 / Hold and activation | Disable Hold for an activated penetrator. Spend one available bonus once per piece; repeated activation is a no-op. Restart clears bonuses. | Agent recommendation; activation-until-lock requirement | Passes 4–6; proposed |
+| Pass 4 / valid landing | Find greatest board row at or below current origin yielding a fully contained, non-overlapping placement, scanning through occupied intermediate positions. Reject movement/rotation that would leave no valid downward landing. Stop gravity at that terminal landing; transient overlap never locks, clears cells or ends the game. Activation preserves an existing lock deadline if still grounded; becoming airborne cancels it. | Agent recommendation prevents trapped overlap and preserves lock safety | Passes 4–6; proposed |
+| Pass 5 / defaults | Dynamic ghost, hard drop enabled, next preview enabled, hard drop follows general policy, full-interval general locking, Hold enabled. | Agent recommendation preserves prior gameplay | Passes 5–6; proposed |
+| Pass 5 / live changes | Visibility, preview and hard-drop/Hold enable switches apply immediately; disabling Hold retains its stored piece. Locking-policy changes apply at the next spawned piece; active piece retains captured policies and deadline. Restart retains settings and resets gameplay. Hiding the page suspends simulation rather than accumulating gravity/lock time. | Agent recommendation avoids retroactive locking and accidental background losses | Configuration scopes; background suspension applies to baseline |
+| Pass 6 / invalid sources | Validate each source independently. An invalid URL value falls back to a valid cookie, then default, and does not overwrite that cookie. Invalid cookies fall back to default. Empty values invalid; for duplicate parameters use the last occurrence and validate it. Preserve unrelated query parameters and fragment. | Agent recommendation maintains independent precedence | Pass 6; proposed |
+| Pass 6 / persistence failure | Settings remain effective in memory if cookie or history updates fail; show a concise non-blocking persistence warning. Cookie is host-only, path /, SameSite=Lax, with Secure on HTTPS; no personal data. Serve over HTTP(S). | Agent recommendation preserves playable behavior under browser restrictions | Pass 6; proposed |
+
+## Cross-scope decisions
+
+| Concern | Applicable decision | Reconsideration condition |
+| --- | --- | --- |
+| Baseline isolation | Pass 1 baseline excludes future enhancements and settings; retain future scope here until its turn. | Explicit user scope amendment |
+| Ghost/penetration/midline | Pass 3 whole-piece boundary evaluates the same landing calculator used by hard drop; pass 4 changes its penetration policy. | Changed board size or landing rule |
+| Grounding/activation/live policy | Pass 2 delay, pass 4 valid landing and pass 5 policy capture cooperate; overlap is never a legal lock state. | Contradictory acceptance scenario or user change |
+| Hold/penetrator/configuration | Pass 4 active penetrator always disables Hold, regardless of enabled setting; retained Hold slot survives disabling. | User change to activation lifetime |
+| Persistence | Pass 5 is memory only; pass 6 introduces independent source validation and round-trip updates. | New setting or storage requirement |
+| Verification | Follow root BROWSER_DEV_POLICY.md: isolated Chromium primary, managed Firefox secondary; no browser installation for document-only work. | Accepted test matrix amendment or actual facility blocker |
+
+## Decisions and document evidence
+
+| Task | Evidence / decision basis |
+| --- | --- |
+| DOCS-001 | Four existing root files preserved byte for byte against initial SHA-256 inventory; no root copies needed. Default provenance scaffold verified and integrated; task template copied from bundled package. Initialization checkpoint requires publish/readback and issue 1 closure before PROJECT work. |
+| DOCS-002 | Pending first PROJECT proposal and human acceptance. |
+| DOCS-003–008 | Not started; applicable subsequent checkpoints preapproved under mode after first PROJECT approval. |
+| DOCS-009 | Outside current authorized stopping boundary; remains unchecked and issue 9 open. |
+
+## Initialization and current reset
+
+- Original retained roots: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied roots: none. All four present, so no mixed-initialization pause applies.
+- Provenance: default enabled; two scaffold assets copied byte for byte, without transcripts. Base main 00d05adb658650f8f5bd2c096dcfd90b1a84e9fc; seed c3fcd9b7c917cc38bbdc34bf65281a119f05bede; explicit two-parent main merge 88474bff25c572f5ee8a3bb75f98d801c15d2b6f. Both published with exact matching remote readback and confirmed cleanup.
+- Credential: conventional gh.tkn saved only after complete projection, with *.tkn ignored and path untracked. No credential is part of project documents.
+- Current reset: none; no prior delivery ranges exist yet.
+
+## Pending transitions
+
+Publish/read back this initialization checkpoint, then close/read back issue 1. Prepare/publish the PROJECT proposal and obtain first approval before architecture. First approval will authorize the predefined remaining document sequence and resets; it will not authorize implementation, package QC or integration.
