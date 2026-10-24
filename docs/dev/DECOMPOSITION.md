@@ -15,6 +15,7 @@
 | Browser input/status | Map focused keyboard/events and HTML restart/status | controller commands, render status | Real key/focus/visibility interactions |
 | Landing/rotation | Ordinary landing and ordered SRS kick candidates; no mode lifetime | landing(board,piece,mode), rotate(board,piece) | Obstacles, walls/floor and orientation cases |
 | Hold/lock state | Engine-owned Hold slot, per-piece eligibility and grounded deadline | Engine commands and snapshot fields | Swap/spawn failures and exact deadline boundaries |
+| Ghost visibility | Whole-footprint midline predicate; never alters projection | visibleGhost(cells, policy) | All-upper, straddling and all-lower cases |
 
 ## Collaboration and ownership
 
