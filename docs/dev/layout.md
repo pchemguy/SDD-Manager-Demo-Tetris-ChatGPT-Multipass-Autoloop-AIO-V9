@@ -16,6 +16,7 @@ Proposed source placement for [DECOMPOSITION](DECOMPOSITION.md) and [PLAN](PLAN.
 | tests/browser/; playwright.config.ts | Actual static application keyboard/focus/screenshot checks for isolated Chromium/Firefox |
 | package.json, lockfile, tsconfig.json, vite.config.ts | Pinned TypeScript/static build/test tooling; no backend |
 | README.md; docs/dev/reports/phases/ | Validated setup/play instructions; implementation milestone/phase evidence |
+| src/core/landing.ts; tests/core/landing.test.ts | Shared projection/drop landing; source/geometry/engine files own 7-bag, SRS, Hold and lock state |
 
 ## Boundaries and generated artifacts
 
