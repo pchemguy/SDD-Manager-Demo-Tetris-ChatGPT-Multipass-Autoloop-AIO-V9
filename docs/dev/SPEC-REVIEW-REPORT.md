@@ -4,11 +4,12 @@
 
 State: Ready for dependent PLAN. No unresolved confirmed findings within this artifact review.
 
-Reviewed/governing identities: SPEC.md: SHA-256 1b4cd24aff53fff9563e3858d112fad38163f2843f1ab0f458f835eae2ed7fd6; PROJECT.md: SHA-256 029de48e0785b78b46eb306c0b7c82146efbe93f88fd27564f8102041a2cb3ea; ARCHITECTURE.md: SHA-256 a4c0ea92f93dd07c2e9015e2d36c12885b0991adfd6ee7acec5bc55c95ed59ca; DECOMPOSITION.md: SHA-256 0707b5669ce4d7a48c8d3b529ffd36bf8aeaa1d464c9dd39104813e33368fd18.
+Reviewed/governing identities: SPEC.md: SHA-256 25e5eaa96608d2247cdd0f6f8c79b45d80fbb907b0044f6c50d5b14f7cb8a5da; PROJECT.md: SHA-256 32a089f5781b37bc32722f518c1532d123583bacea0ab8462e3af91c0fab09e3; ARCHITECTURE.md: SHA-256 08094e319211a5993e9c79baea66ae90af046331223ecd47afd4ef706416a7fc; DECOMPOSITION.md: SHA-256 7050c9ddb63602bc4bf3e45a4e92540563a79e163f52fb1666b2dd3cfc1e08e6.
 
 Methods: owner semantic review plus executable local link/spacing/whitespace, contract-coverage, hierarchy and protected-range checks. These are document checks; product code/tests/browser behavior have not been executed. This is not whole-package DOCS-009 QC.
 
 ## Review history
+
 
 
 
@@ -29,5 +30,15 @@ Date: 2026-10-24. Reviewer: authoring agent acting as the focused document owner
 Sources: SPEC.md: SHA-256 1b4cd24aff53fff9563e3858d112fad38163f2843f1ab0f458f835eae2ed7fd6; PROJECT.md: SHA-256 029de48e0785b78b46eb306c0b7c82146efbe93f88fd27564f8102041a2cb3ea; ARCHITECTURE.md: SHA-256 a4c0ea92f93dd07c2e9015e2d36c12885b0991adfd6ee7acec5bc55c95ed59ca; DECOMPOSITION.md: SHA-256 0707b5669ce4d7a48c8d3b529ffd36bf8aeaa1d464c9dd39104813e33368fd18.
 
 Reviewed board/input/time/lock/clear/spawn lifecycle against design ownership and current product scope. Acceptance covers legal/rejected transitions, failure paths and browser/UI obligations. Current contract groups: B-01, B-06, B-02, B-03, B-04, B-05, E-01, E-02, E-03, Q-01. No future-scope configuration or penetration requirement is adopted before its scope is active. Stateful mutation belongs to engine/controller; adapters cannot commit cells.
+
+Findings: no unresolved confirmed conformance issue in the reviewed scope. Numerical departures are assessed above rather than padded. Recheck: automated document validation plus source-level semantic review; evidence does not certify implementation.
+
+### Revision 2
+
+Date: 2026-10-24. Reviewer: authoring agent acting as the focused document owner. Scope: cumulative Conditional ghost visibility; artifact.
+
+Sources: SPEC.md: SHA-256 25e5eaa96608d2247cdd0f6f8c79b45d80fbb907b0044f6c50d5b14f7cb8a5da; PROJECT.md: SHA-256 32a089f5781b37bc32722f518c1532d123583bacea0ab8462e3af91c0fab09e3; ARCHITECTURE.md: SHA-256 08094e319211a5993e9c79baea66ae90af046331223ecd47afd4ef706416a7fc; DECOMPOSITION.md: SHA-256 7050c9ddb63602bc4bf3e45a4e92540563a79e163f52fb1666b2dd3cfc1e08e6.
+
+Reviewed board/input/time/lock/clear/spawn lifecycle against design ownership and current product scope. Acceptance covers legal/rejected transitions, failure paths and browser/UI obligations. Current contract groups: B-01, B-06, B-02, B-03, B-04, B-05, E-01, E-02, E-03, G-01, Q-01. No future-scope configuration or penetration requirement is adopted before its scope is active. Stateful mutation belongs to engine/controller; adapters cannot commit cells.
 
 Findings: no unresolved confirmed conformance issue in the reviewed scope. Numerical departures are assessed above rather than padded. Recheck: automated document validation plus source-level semantic review; evidence does not certify implementation.

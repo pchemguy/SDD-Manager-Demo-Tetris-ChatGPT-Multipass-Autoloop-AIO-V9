@@ -75,7 +75,11 @@ A piece is grounded when it is at its applicable terminal landing. On first grou
 
 Acceptance: arrival at time t cannot lock before t+1000; repeated grounded adjustments/drop do not postpone it; airborne cancellation and regrounding start a new deadline; hidden time does not consume it.
 
-Ghost visibility is always enabled.
+## G-01 — Whole-piece ghost boundary
+
+Dynamic visibility shows the whole ghost if and only if every projected occupied cell has row >=10. Any projected cell in rows 0–9 hides the entire ghost; a shape spanning rows 9 and 10 is hidden. Recompute after every accepted movement/rotation/spawn, board change and activation affecting projection. Visibility cannot change the projected landing or hard-drop result.
+
+Acceptance: footprints with minimum rows 9 and 10 distinguish the boundary, straddling hides, and transitions from lower to upper and back update without stale ghosts.
 
 ## Q-01 — Quality, delivery and verification
 
