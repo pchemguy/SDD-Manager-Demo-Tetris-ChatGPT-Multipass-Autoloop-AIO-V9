@@ -95,6 +95,37 @@ Start with zero bonuses. Exactly four rows cleared by one lock awards one bonus,
 
 Acceptance: 0/1/2/3 counts, capped awards, earn-after-spend, no award for fewer rows, restart and white active/non-white ordinary rendering are verified.
 
+## C-01 — Six settings and defaults
+
+Provide labeled native side-panel controls with these canonical values. Boolean controls use the canonical URL/cookie tokens on/off.
+
+| Key | Allowed tokens | Default |
+| --- | --- | --- |
+| ghost | hide, dynamic, show | dynamic |
+| hardDrop | on, off | on |
+| next | on, off | on |
+| hardDropLock | general, immediate | general |
+| lock | failed-down, interval | interval |
+| hold | on, off | on |
+
+Show mode labels understandable without tokens. Next preview displays exactly one queued shape when enabled and consumes no queue entry. Disabled Hold hides/marks its control unavailable but retains its slot. Hard-drop-off ignores Space without invoking any locking action. Ghost hide suppresses projection rendering; show ignores midline; dynamic uses G-01. Disabling preview hides it without changing queue state. Native settings controls retain keyboard navigation without moving the piece.
+
+Acceptance: all values/defaults, combinations including hidden ghost with enabled drop, hidden next with unchanged queue, disabled Hold with retained slot, and control focus are verified.
+
+## C-02 — Live policies and restart
+
+Serialize setting changes as session actions. Visibility and hard-drop/Hold enablement apply immediately. Capture general and hard-drop locking selections at each active-piece spawn, including Hold replacement; changes do not alter that piece’s captured policy or deadline. Restart retains current selections, creates a fresh game and captures them on the first piece.
+
+Under failed-down general locking, lock only on a failed gravity or soft-down attempt at terminal landing, not just on arrival. There is no interval timer under this policy. A penetrator at terminal landing counts as failed-down even if the next overlapping row geometrically fits bounds. Under interval locking apply E-03. Immediate hard-drop locking overrides either general policy only for an enabled successful hard-drop command, including zero-distance drops. Follow-general preserves the general policy, so failed-down hard drop arrives without synthesizing a failed downward attempt. Other input remains subject to active mode and Hold eligibility.
+
+Acceptance: change both policies while grounded, observe unchanged active timing, then verify new policies after spawn/Hold/restart. Test general-policy × hard-drop-policy combinations for ordinary and penetrating pieces, zero-distance drops and disabled Space.
+
+## C-03 — Page-session settings
+
+Keep selections only in the current in-memory page instance. Do not read/write configuration cookies, URL parameters, localStorage or sessionStorage. A page reload restores all C-01 defaults. Restart without reload retains selections.
+
+Acceptance: changing settings and restarting preserves choices; reloading restores defaults and performs no configuration persistence writes.
+
 ## Q-01 — Quality, delivery and verification
 
 The application runs without backend calls and exposes understandable score, lines and game status through native HTML. Board and controls remain usable without overlap at desktop viewport sizes; keyboard focus is visible. Rendering and event hookup must not create multiple animation loops after restart. Core tests control time/randomness and test transitions without DOM. Browser checks exercise real inputs, focus, screenshots and restart in isolated Chromium primary and compatible managed Firefox secondary under BROWSER_DEV_POLICY.md. Required browser failures are reported separately and block affected acceptance; a passing unit suite does not waive them.
