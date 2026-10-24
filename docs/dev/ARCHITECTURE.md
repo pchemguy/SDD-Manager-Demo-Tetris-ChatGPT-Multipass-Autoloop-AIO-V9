@@ -32,3 +32,7 @@ The piece source owns a shuffled seven-piece bag. Rotation geometry owns SRS ori
 ## Ghost presentation policy
 
 Ghost visibility consumes projected occupied cells without changing the landing service or engine physics. Its predicate tests the whole footprint against the board midline. The view renders the result; hidden ghosts still have a valid projection for other consumers.
+
+## Penetration policy
+
+Landing and movement take explicit ordinary/penetrator mode. Penetrator landing scans all fully contained candidate origins at or below the current origin for the greatest non-overlapping placement, ignoring intervening occupancy. The engine owns activation, bonus inventory and mode lifetime; it validates future landing availability before accepting an adjustment. Overlap during transit is a permitted active state, never a legal commit state. Bonus awards are part of the atomic lock/clear transaction. The renderer derives white styling and bonus symbols from the authoritative snapshot.
