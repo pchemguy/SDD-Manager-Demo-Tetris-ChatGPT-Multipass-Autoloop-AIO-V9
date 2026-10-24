@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 3, Conditional ghost visibility; cursor DOCS-003.
+- Current scope: pass 3, Conditional ghost visibility; cursor DOCS-004.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -103,6 +103,7 @@ Prior pass completion: b3298b35a2af597ac507f497a8fea3e27f7dec4c. Next scope: Con
 ## Pass 3 document evidence
 
 - DOCS-002: PROJECT.md, SHA-256 32a089f5781b37bc32722f518c1532d123583bacea0ab8462e3af91c0fab09e3; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
+- DOCS-003: ARCHITECTURE.md, SHA-256 08094e319211a5993e9c79baea66ae90af046331223ecd47afd4ef706416a7fc; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
 
 ## Pending transitions
 

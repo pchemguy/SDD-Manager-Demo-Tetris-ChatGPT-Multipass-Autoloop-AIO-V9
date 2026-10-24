@@ -28,3 +28,7 @@ Only a legal, fully contained, non-overlapping placement can be committed to the
 ## Enhanced game rules
 
 The piece source owns a shuffled seven-piece bag. Rotation geometry owns SRS orientation and ordered kick candidates. The engine owns Hold eligibility and grounded lock state. A single landing service computes the normal first reachable downward landing for both ghost and hard drop; callers never maintain separate collision logic. The controller supplies elapsed simulation time, while the engine owns deadline creation/cancellation. This separates game policy from frame scheduling.
+
+## Ghost presentation policy
+
+Ghost visibility consumes projected occupied cells without changing the landing service or engine physics. Its predicate tests the whole footprint against the board midline. The view renders the result; hidden ghosts still have a valid projection for other consumers.
