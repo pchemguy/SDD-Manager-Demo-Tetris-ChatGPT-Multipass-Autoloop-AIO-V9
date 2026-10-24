@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 1, playable classic baseline; cursor DOCS-003, accepted PROJECT.
+- Current scope: pass 1, Playable classic baseline; cursor DOCS-004.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -54,7 +54,7 @@ The recommendations below originated with the agent during initial exploration a
 | Task | Evidence / decision basis |
 | --- | --- |
 | DOCS-001 | Four existing root files preserved byte for byte against initial SHA-256 inventory; no root copies needed. Default provenance scaffold verified and integrated; task template copied from bundled package. Initialization commit 8f4be5bafa9fac43e3abfe4162af1e4c4e3997f1 published with exact matching remote readback and confirmed cleanup; issue 1 closed/completed and read back before PROJECT work. |
-| DOCS-002 | Pass 1 PROJECT proposal SHA-256 36457951c3c7a5d45fb94d003b4806374dcb6f5affa44e83fb441fa4da7a0490; reviewed against seed and brief contract for purpose, users, baseline scope, constraints, assumptions and content boundaries. No future enhancement requirements imported. Human acceptance: user “Approve” response to c7424e990408d5c6fd168240121ed94fe092d925. Accepted exact PROJECT bytes retained; task checked. README links checked. |
+| DOCS-002 | First PROJECT/interaction approval: user Approve to proposal c7424e990408d5c6fd168240121ed94fe092d925; current-pass evidence below. |
 | DOCS-003–008 | Not started; applicable subsequent checkpoints preapproved under mode after first PROJECT approval. |
 | DOCS-009 | Outside current authorized stopping boundary; remains unchecked and issue 9 open. |
 
@@ -65,6 +65,10 @@ The recommendations below originated with the agent during initial exploration a
 - Credential: conventional gh.tkn saved only after complete projection, with *.tkn ignored and path untracked. No credential is part of project documents.
 - Current reset: none; no prior delivery ranges exist yet.
 
+## Pass 1 document evidence
+
+- DOCS-003: ARCHITECTURE.md, SHA-256 887a62212cb7e705c1be19b702a9e9028b18bb0665d050f6d3f283a457f603d8; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
+
 ## Pending transitions
 
-Publish/read back PROJECT acceptance, then close/read back issue 2 before architecture. User approval authorizes all six predefined document scopes and resets with later checkpoints preapproved. Implementation, package QC and integration remain excluded.
+Publish/read back the owning completion commit, then close/read back its same DOCS issue before dependent work. No implementation activation or package QC is authorized.
