@@ -18,6 +18,8 @@ Proposed source placement for [DECOMPOSITION](DECOMPOSITION.md) and [PLAN](PLAN.
 | README.md; docs/dev/reports/phases/ | Validated setup/play instructions; implementation milestone/phase evidence |
 | src/core/landing.ts; tests/core/landing.test.ts | Shared projection/drop landing; source/geometry/engine files own 7-bag, SRS, Hold and lock state |
 | src/view/ghost.ts; tests/view/ghost.test.ts | Pure ghost visibility predicate; board view consumes result |
+| src/config/settings.ts; src/view/settings.ts, preview.ts | Settings state/defaults and native controls/next preview; engine captures policy at spawn |
+| tests/config/; tests/browser/configuration.spec.ts | Defaults/live changes and policy-combination acceptance |
 
 ## Boundaries and generated artifacts
 
