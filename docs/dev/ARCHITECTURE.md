@@ -41,4 +41,6 @@ Landing and movement take explicit ordinary/penetrator mode. Penetrator landing 
 
 A settings model owns validated selections, defaults and UI notifications. The engine captures both locking policies at spawn; visibility and feature enablement are read at action/render time. The controller serializes a setting change with game actions. A selector never rewrites settled cells, active geometry or an in-progress deadline. Settings survive game restart independently of gameplay state. Next preview reads the pending queue without consuming it. Native HTML selects avoid game shortcuts while focused.
 
-Settings have no storage adapter. Composition constructs fresh defaults on page load and retains them only in memory.
+## Persistence adapters
+
+A pure codec maps six canonical setting keys to allowed tokens. Startup resolves each setting independently using URL, cookie and default sources before the controller creates the first piece. Only the browser adapter reads location/cookies or invokes history replacement. A validated explicit URL selection triggers a cookie write even if it equals the default. Player changes first update memory, then attempt cookie and URL writes independently. Errors become a presentation warning and never interrupt the game clock. The adapter preserves unrelated query fields and the fragment and stores no personal information.

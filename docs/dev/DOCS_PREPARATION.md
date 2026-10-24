@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 6, Configuration persistence; cursor DOCS-003.
+- Current scope: pass 6, Configuration persistence; cursor DOCS-004.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -157,6 +157,7 @@ Prior pass completion: 4fcaf0bb99974affa65d98439b6f424e8548930c. Next scope: Con
 ## Pass 6 document evidence
 
 - DOCS-002: PROJECT.md, SHA-256 017ed4d26c04c4930ac4dca594a52d4c26ea2fa8008ca16fa1a5dfa524e26dc5; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
+- DOCS-003: ARCHITECTURE.md, SHA-256 ee5c412fb4df90e0e9adc38e4e6d4f0caf0d16280aa37714dfbd518eb856928b; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
 
 ## Pending transitions
 
