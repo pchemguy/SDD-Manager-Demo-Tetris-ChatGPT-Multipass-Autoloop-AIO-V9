@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 2, Gameplay enhancements; cursor DOCS-004.
+- Current scope: pass 2, Gameplay enhancements; cursor DOCS-005.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -86,6 +86,7 @@ Prior pass completion: 7d4024ecc9e20bc62be2be9f7ce66930db3e13c6. Next scope: Gam
 
 - DOCS-002: PROJECT.md, SHA-256 029de48e0785b78b46eb306c0b7c82146efbe93f88fd27564f8102041a2cb3ea; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
 - DOCS-003: ARCHITECTURE.md, SHA-256 a4c0ea92f93dd07c2e9015e2d36c12885b0991adfd6ee7acec5bc55c95ed59ca; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
+- DOCS-004: DECOMPOSITION.md, SHA-256 0707b5669ce4d7a48c8d3b529ffd36bf8aeaa1d464c9dd39104813e33368fd18; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
 
 ## Pending transitions
 
