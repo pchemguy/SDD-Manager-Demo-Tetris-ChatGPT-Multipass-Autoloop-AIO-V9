@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 1, playable classic baseline; cursor DOCS-002 proposal preparation.
+- Current scope: pass 1, playable classic baseline; cursor DOCS-002, published proposal awaiting first human approval.
 - Authority: initialization and document preparation authorized; first PROJECT approval remains active. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -53,8 +53,8 @@ All choices below are proposals developed during initial exploration, pending th
 
 | Task | Evidence / decision basis |
 | --- | --- |
-| DOCS-001 | Four existing root files preserved byte for byte against initial SHA-256 inventory; no root copies needed. Default provenance scaffold verified and integrated; task template copied from bundled package. Initialization checkpoint requires publish/readback and issue 1 closure before PROJECT work. |
-| DOCS-002 | Pending first PROJECT proposal and human acceptance. |
+| DOCS-001 | Four existing root files preserved byte for byte against initial SHA-256 inventory; no root copies needed. Default provenance scaffold verified and integrated; task template copied from bundled package. Initialization commit 8f4be5bafa9fac43e3abfe4162af1e4c4e3997f1 published with exact matching remote readback and confirmed cleanup; issue 1 closed/completed and read back before PROJECT work. |
+| DOCS-002 | Pass 1 PROJECT proposal SHA-256 36457951c3c7a5d45fb94d003b4806374dcb6f5affa44e83fb441fa4da7a0490; reviewed against seed and brief contract for purpose, users, baseline scope, constraints, assumptions and content boundaries. No future enhancement requirements imported. Human acceptance pending; task remains unchecked and issue 2 open. README links checked. |
 | DOCS-003–008 | Not started; applicable subsequent checkpoints preapproved under mode after first PROJECT approval. |
 | DOCS-009 | Outside current authorized stopping boundary; remains unchecked and issue 9 open. |
 
@@ -67,4 +67,4 @@ All choices below are proposals developed during initial exploration, pending th
 
 ## Pending transitions
 
-Publish/read back this initialization checkpoint, then close/read back issue 1. Prepare/publish the PROJECT proposal and obtain first approval before architecture. First approval will authorize the predefined remaining document sequence and resets; it will not authorize implementation, package QC or integration.
+Publish/read back this PROJECT proposal and obtain first approval before architecture. Initialization publication and issue 1 closure are verified. First approval will authorize the predefined remaining document sequence and resets; it will not authorize implementation, package QC or integration.
