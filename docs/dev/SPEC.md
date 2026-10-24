@@ -108,7 +108,7 @@ Provide labeled native side-panel controls with these canonical values. Boolean 
 | lock | failed-down, interval | interval |
 | hold | on, off | on |
 
-Show mode labels understandable without tokens. Next preview displays exactly one queued shape when enabled and consumes no queue entry. Disabled Hold hides/marks its control unavailable but retains its slot. Hard-drop-off ignores Space without invoking any locking action. Ghost hide suppresses projection rendering; show ignores midline; dynamic uses G-01. Disabling preview hides it without changing queue state. Native settings controls retain keyboard navigation without moving the piece.
+Show mode labels understandable without tokens. Next preview displays exactly one queued shape when enabled and consumes no queue entry. Disabled Hold prevents the gameplay Hold action and marks its display unavailable, while retaining the stored slot. The Hold setting selector remains operable so the player can re-enable Hold. Hard-drop-off ignores Space without invoking any locking action. Ghost hide suppresses projection rendering; show ignores midline; dynamic uses G-01. Disabling preview hides it without changing queue state. Native settings controls retain keyboard navigation without moving the piece.
 
 Acceptance: all values/defaults, combinations including hidden ghost with enabled drop, hidden next with unchanged queue, disabled Hold with retained slot, and control focus are verified.
 
@@ -119,6 +119,12 @@ Serialize setting changes as session actions. Visibility and hard-drop/Hold enab
 Under failed-down general locking, lock only on a failed gravity or soft-down attempt at terminal landing, not just on arrival. There is no interval timer under this policy. A penetrator at terminal landing counts as failed-down even if the next overlapping row geometrically fits bounds. Under interval locking apply E-03. Immediate hard-drop locking overrides either general policy only for an enabled successful hard-drop command, including zero-distance drops. Follow-general preserves the general policy, so failed-down hard drop arrives without synthesizing a failed downward attempt. Other input remains subject to active mode and Hold eligibility.
 
 Acceptance: change both policies while grounded, observe unchanged active timing, then verify new policies after spawn/Hold/restart. Test general-policy × hard-drop-policy combinations for ordinary and penetrating pieces, zero-distance drops and disabled Space.
+
+## C-03 — Session-only delivery boundary
+
+For the session-only configuration delivery, keep selections only in the current in-memory page instance. Do not read/write configuration cookies, URL parameters, localStorage or sessionStorage. A page reload restores all C-01 defaults; Restart without reload retains selections.
+
+Acceptance for that delivery boundary: changing settings and restarting preserves choices; reloading restores defaults and performs no configuration persistence writes. The persistent configuration delivery applies S-01 and S-02 in place of these source/reload restrictions. Restart retention remains applicable to both deliveries. This preserves the independently verifiable Phase 5 contract without requiring Phase 6 to discard persistence.
 
 ## S-01 — Independent startup resolution
 

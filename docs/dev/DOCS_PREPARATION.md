@@ -171,3 +171,7 @@ Publish/read back the owning completion commit, then close/read back its same DO
 ## Pass 6 result
 
 Current cumulative scope Configuration persistence is covered through DOCS-008; per-document gates are recorded above. PLAN/TASKS phases 1–6 retained with new phase 6 and task range T-029–T-032. Earlier phase blocks remain byte-identical. No new product decision supersedes the accepted cross-scope decisions. Publish/close issue 8 before reset or final stop; DOCS-009 remains unchecked.
+
+## Final-pass contract correction
+
+CFG-001 resolved within the final pass: C-03 remains a session-only delivery-boundary acceptance contract referenced by protected Phase 5; S-01/S-02 govern persistent delivery. Clarified gameplay Hold availability versus its operable settings selector. No behavior or protected phase/task scope changed. Current SPEC SHA-256: eaee1cc5577a74be6bc9133291365a8bcb09a5688a09fbdea011da8d81202271. SPEC/PLAN/TASKS owner reports retain the correction and refreshed exact input identities. DOCS-001–008 retain current-pass completion; this ordinary document correction does not run DOCS-009, merge preparation or authorize implementation. Publish/read back correction before final status.

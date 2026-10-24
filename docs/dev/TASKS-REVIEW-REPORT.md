@@ -4,11 +4,12 @@
 
 State: Ready for dependent bounded implementation after separate package/integration/activation authority. No unresolved confirmed findings within this artifact review.
 
-Reviewed/governing identities: TASKS.md: SHA-256 a72d5879b0e5e92ba8f2a504bd13b0fa10ac6b76e69053708aeeb11a7dde3285; SPEC.md: SHA-256 9437a5d0b4ff76084cce60988bc9527a14b24778ca4f88346055ffbd8aa6a62a; SPEC-REVIEW-REPORT.md: SHA-256 f38a5009248c40ea16c5f08b31ab90bc40b5937cc6a9988d9f587bf4f939a398; PLAN.md: SHA-256 6bb885adcb7531e758467acdaa46d39e41aec245f9e791f90e39edc6ef175208; PLAN-REVIEW-REPORT.md: SHA-256 9b97042bddfadc56a519eb617ea163a4e5ef8cfef2a77843b9901655b2b3be1d; layout.md: SHA-256 3ffcd07281324f9a8d21364896f09419288bcfea09c87e30767215ea5ea18464.
+Reviewed/governing identities: TASKS.md: SHA-256 a72d5879b0e5e92ba8f2a504bd13b0fa10ac6b76e69053708aeeb11a7dde3285; SPEC.md: SHA-256 eaee1cc5577a74be6bc9133291365a8bcb09a5688a09fbdea011da8d81202271; SPEC-REVIEW-REPORT.md: SHA-256 83b83fb6bc132c96e8f7078f7b225825da41ee9448107121c05309420f57c866; PLAN.md: SHA-256 6bb885adcb7531e758467acdaa46d39e41aec245f9e791f90e39edc6ef175208; PLAN-REVIEW-REPORT.md: SHA-256 4d03be3e824ab421db4bdf502d996626ff3f4f97c8ee0573502d413a8c47e907; layout.md: SHA-256 3ffcd07281324f9a8d21364896f09419288bcfea09c87e30767215ea5ea18464.
 
 Methods: owner semantic review plus executable local link/spacing/whitespace, contract-coverage, hierarchy and protected-range checks. These are document checks; product code/tests/browser behavior have not been executed. This is not whole-package DOCS-009 QC.
 
 ## Review history
+
 
 
 
@@ -165,3 +166,38 @@ Prior-pass PLAN/TASKS phase blocks are compared byte for byte before append; nam
 
 
 Findings: no unresolved confirmed conformance issue in the reviewed scope. Numerical departures are assessed above rather than padded. Recheck: automated document validation plus source-level semantic review; evidence does not certify implementation.
+
+### Revision 6
+
+Date: 2026-10-24. Reviewer: authoring agent acting as the focused document owner. Scope: cumulative Configuration persistence; artifact.
+
+Sources: TASKS.md: SHA-256 a72d5879b0e5e92ba8f2a504bd13b0fa10ac6b76e69053708aeeb11a7dde3285; SPEC.md: SHA-256 eaee1cc5577a74be6bc9133291365a8bcb09a5688a09fbdea011da8d81202271; SPEC-REVIEW-REPORT.md: SHA-256 83b83fb6bc132c96e8f7078f7b225825da41ee9448107121c05309420f57c866; PLAN.md: SHA-256 6bb885adcb7531e758467acdaa46d39e41aec245f9e791f90e39edc6ef175208; PLAN-REVIEW-REPORT.md: SHA-256 4d03be3e824ab421db4bdf502d996626ff3f4f97c8ee0573502d413a8c47e907; layout.md: SHA-256 3ffcd07281324f9a8d21364896f09419288bcfea09c87e30767215ea5ea18464.
+
+Reviewed every milestone outcome against executable task scopes, prerequisites, contract IDs and concrete verification. Unique task IDs, four-space hierarchy, folded milestone review obligations and one separate phase-review task per phase checked. No implementation checkbox is checked.
+
+| Group | Delivery count | Excluded reviews | Scope/count assessment |
+| --- | --- | --- | --- |
+| Milestone 1.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Milestone 1.2 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Phase 1 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+| Milestone 2.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Milestone 2.2 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Phase 2 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+| Milestone 3.1 | 2 tasks | No standalone milestone review | Two tasks separate a pure predicate from browser integration; small scope justifies count. |
+| Phase 3 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+| Milestone 4.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Milestone 4.2 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Phase 4 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+| Milestone 5.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Phase 5 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+| Milestone 6.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Phase 6 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+
+Prior-pass PLAN/TASKS phase blocks are compared byte for byte before append; names, membership, order, dependencies and exits are retained. No flexible exception is used.
+
+
+Findings: no unresolved confirmed conformance issue in the reviewed scope. Numerical departures are assessed above rather than padded. Recheck: automated document validation plus source-level semantic review; evidence does not certify implementation.
+
+#### CFG-001 — Retained delivery-boundary acceptance
+
+Finding: the cumulative persistent specification must retain the C-03 acceptance route referenced by protected Phase 5 PLAN/TASKS, while applying S-01/S-02 to Phase 6. The specification owner retained C-03 as an explicitly delivery-scoped contract and clarified that disabling gameplay Hold never disables its settings selector. Recheck: both contracts exist with distinct applicability; source and dependent report identities refreshed. PLAN and TASKS bytes, scopes, IDs and exits are unchanged. Status: resolved; no user-scope amendment or flexible exception.

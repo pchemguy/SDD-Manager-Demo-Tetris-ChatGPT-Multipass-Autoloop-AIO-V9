@@ -4,11 +4,12 @@
 
 State: Ready for dependent PLAN. No unresolved confirmed findings within this artifact review.
 
-Reviewed/governing identities: SPEC.md: SHA-256 9437a5d0b4ff76084cce60988bc9527a14b24778ca4f88346055ffbd8aa6a62a; PROJECT.md: SHA-256 017ed4d26c04c4930ac4dca594a52d4c26ea2fa8008ca16fa1a5dfa524e26dc5; ARCHITECTURE.md: SHA-256 ee5c412fb4df90e0e9adc38e4e6d4f0caf0d16280aa37714dfbd518eb856928b; DECOMPOSITION.md: SHA-256 5df219a85c2c44a249a8fc0b447a8c5e44c09ccb4296f363c4bd1ef90475eb68.
+Reviewed/governing identities: SPEC.md: SHA-256 eaee1cc5577a74be6bc9133291365a8bcb09a5688a09fbdea011da8d81202271; PROJECT.md: SHA-256 017ed4d26c04c4930ac4dca594a52d4c26ea2fa8008ca16fa1a5dfa524e26dc5; ARCHITECTURE.md: SHA-256 ee5c412fb4df90e0e9adc38e4e6d4f0caf0d16280aa37714dfbd518eb856928b; DECOMPOSITION.md: SHA-256 5df219a85c2c44a249a8fc0b447a8c5e44c09ccb4296f363c4bd1ef90475eb68.
 
 Methods: owner semantic review plus executable local link/spacing/whitespace, contract-coverage, hierarchy and protected-range checks. These are document checks; product code/tests/browser behavior have not been executed. This is not whole-package DOCS-009 QC.
 
 ## Review history
+
 
 
 
@@ -75,3 +76,17 @@ Sources: SPEC.md: SHA-256 9437a5d0b4ff76084cce60988bc9527a14b24778ca4f88346055ff
 Reviewed board/input/time/lock/clear/spawn lifecycle against design ownership and current product scope. Acceptance covers legal/rejected transitions, failure paths and browser/UI obligations. Current contract groups: B-01, B-06, B-02, B-03, B-04, B-05, E-01, E-02, E-03, G-01, P-01, P-02, C-01, C-02, S-01, S-02, Q-01. No future-scope configuration or penetration requirement is adopted before its scope is active. Stateful mutation belongs to engine/controller; adapters cannot commit cells.
 
 Findings: no unresolved confirmed conformance issue in the reviewed scope. Numerical departures are assessed above rather than padded. Recheck: automated document validation plus source-level semantic review; evidence does not certify implementation.
+
+### Revision 6
+
+Date: 2026-10-24. Reviewer: authoring agent acting as the focused document owner. Scope: cumulative Configuration persistence; artifact.
+
+Sources: SPEC.md: SHA-256 eaee1cc5577a74be6bc9133291365a8bcb09a5688a09fbdea011da8d81202271; PROJECT.md: SHA-256 017ed4d26c04c4930ac4dca594a52d4c26ea2fa8008ca16fa1a5dfa524e26dc5; ARCHITECTURE.md: SHA-256 ee5c412fb4df90e0e9adc38e4e6d4f0caf0d16280aa37714dfbd518eb856928b; DECOMPOSITION.md: SHA-256 5df219a85c2c44a249a8fc0b447a8c5e44c09ccb4296f363c4bd1ef90475eb68.
+
+Reviewed board/input/time/lock/clear/spawn lifecycle against design ownership and current product scope. Acceptance covers legal/rejected transitions, failure paths and browser/UI obligations. Current contract groups: B-01, B-06, B-02, B-03, B-04, B-05, E-01, E-02, E-03, G-01, P-01, P-02, C-01, C-02, C-03, S-01, S-02, Q-01. No future-scope configuration or penetration requirement is adopted before its scope is active. Stateful mutation belongs to engine/controller; adapters cannot commit cells.
+
+Findings: no unresolved confirmed conformance issue in the reviewed scope. Numerical departures are assessed above rather than padded. Recheck: automated document validation plus source-level semantic review; evidence does not certify implementation.
+
+#### CFG-001 — Retained delivery-boundary acceptance
+
+Finding: the cumulative persistent specification must retain the C-03 acceptance route referenced by protected Phase 5 PLAN/TASKS, while applying S-01/S-02 to Phase 6. The specification owner retained C-03 as an explicitly delivery-scoped contract and clarified that disabling gameplay Hold never disables its settings selector. Recheck: both contracts exist with distinct applicability; source and dependent report identities refreshed. PLAN and TASKS bytes, scopes, IDs and exits are unchanged. Status: resolved; no user-scope amendment or flexible exception.
