@@ -36,3 +36,9 @@ Ghost visibility consumes projected occupied cells without changing the landing 
 ## Penetration policy
 
 Landing and movement take explicit ordinary/penetrator mode. Penetrator landing scans all fully contained candidate origins at or below the current origin for the greatest non-overlapping placement, ignoring intervening occupancy. The engine owns activation, bonus inventory and mode lifetime; it validates future landing availability before accepting an adjustment. Overlap during transit is a permitted active state, never a legal commit state. Bonus awards are part of the atomic lock/clear transaction. The renderer derives white styling and bonus symbols from the authoritative snapshot.
+
+## Configuration ownership
+
+A settings model owns validated selections, defaults and UI notifications. The engine captures both locking policies at spawn; visibility and feature enablement are read at action/render time. The controller serializes a setting change with game actions. A selector never rewrites settled cells, active geometry or an in-progress deadline. Settings survive game restart independently of gameplay state. Next preview reads the pending queue without consuming it. Native HTML selects avoid game shortcuts while focused.
+
+Settings have no storage adapter. Composition constructs fresh defaults on page load and retains them only in memory.
