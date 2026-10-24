@@ -99,3 +99,17 @@ Demonstration: Six settings and next preview work coherently within a page sessi
 ### Milestone 5.2 — Phase review
 
 Exactly one phase code review/testing/report task, after all delivery milestones complete and close. Verify applicable contracts, cross-milestone interactions, required browser matrix and preserved prior behavior; fix blockers, retain phase report and HANDOFF, then close the review milestone. Explicitly integrate the verified phase, check the merged result and publish/read back. Prepare version 0.5.0 and release notes; only after authorized implementation completion/integration publish its matching tag and GitHub release. No phase/release is complete while required checks or publication remain blocked.
+
+## Phase 6 — Persistent configuration
+
+Outcome: persistent configuration as a usable integrated capability. Contract scope: S-01–S-02 and all configured gameplay. Target release: 0.6.0. Depends on verified, published integration and release of phase 5. Retain prior player-visible capabilities except the explicitly scheduled rule changes in this phase.
+
+### Milestone 6.1 — URL and cookie configuration
+
+Independent resolution and robust writes restore player settings across reloads. Depends on the phase entry baseline. Exit: integrated contract checks and applicable regressions pass; review the whole milestone code, repair blockers, commit the milestone report and refresh HANDOFF. The final implementation task owns these obligations unless task-count thresholds require a standalone review.
+
+Demonstration: Independent resolution and robust writes restore player settings across reloads. Inspect functional evidence and relevant usability/focus feedback before continuing; a consequential change may prompt continue/amend/simplify/stop direction without inventing an extra routine approval gate.
+
+### Milestone 6.2 — Phase review
+
+Exactly one phase code review/testing/report task, after all delivery milestones complete and close. Verify applicable contracts, cross-milestone interactions, required browser matrix and preserved prior behavior; fix blockers, retain phase report and HANDOFF, then close the review milestone. Explicitly integrate the verified phase, check the merged result and publish/read back. Prepare version 0.6.0 and release notes; only after authorized implementation completion/integration publish its matching tag and GitHub release. No phase/release is complete while required checks or publication remain blocked.
