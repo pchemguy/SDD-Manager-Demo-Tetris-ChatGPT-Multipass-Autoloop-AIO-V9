@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 6, Configuration persistence; cursor DOCS-007.
+- Current scope: pass 6, Configuration persistence; cursor DOCS-008.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -161,6 +161,7 @@ Prior pass completion: 4fcaf0bb99974affa65d98439b6f424e8548930c. Next scope: Con
 - DOCS-004: DECOMPOSITION.md, SHA-256 5df219a85c2c44a249a8fc0b447a8c5e44c09ccb4296f363c4bd1ef90475eb68; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
 - DOCS-005: SPEC.md, SHA-256 9437a5d0b4ff76084cce60988bc9527a14b24778ca4f88346055ffbd8aa6a62a; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. SPEC-REVIEW-REPORT.md records current design/contract QC; no unresolved blockers.
 - DOCS-006: PLAN.md, SHA-256 6bb885adcb7531e758467acdaa46d39e41aec245f9e791f90e39edc6ef175208; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. PLAN-REVIEW-REPORT.md records strategy QC, count rationale and protected phases.
+- DOCS-007: layout.md, SHA-256 3ffcd07281324f9a8d21364896f09419288bcfea09c87e30767215ea5ea18464; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. PLAN-REVIEW-REPORT.md records strategy/layout QC, count rationale and protected phases.
 
 ## Pending transitions
 

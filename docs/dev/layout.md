@@ -20,6 +20,8 @@ Proposed source placement for [DECOMPOSITION](DECOMPOSITION.md) and [PLAN](PLAN.
 | src/view/ghost.ts; tests/view/ghost.test.ts | Pure ghost visibility predicate; board view consumes result |
 | src/config/settings.ts; src/view/settings.ts, preview.ts | Settings state/defaults and native controls/next preview; engine captures policy at spawn |
 | tests/config/; tests/browser/configuration.spec.ts | Defaults/live changes and policy-combination acceptance |
+| src/config/codec.ts; src/browser/persistence.ts | Pure canonical resolution and browser cookie/history adapter |
+| tests/config/codec.test.ts; tests/browser/persistence.spec.ts | Per-source validation, real reload round-trips and independent write failures |
 
 ## Boundaries and generated artifacts
 
