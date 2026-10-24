@@ -1,6 +1,6 @@
 # Architecture
 
-[PROJECT](PROJECT.md) defines the intended product. This design uses a small functional game core and thin browser adapters; `DECOMPOSITION.md` assigns component responsibilities, and `SPEC.md` owns exact contracts.
+[PROJECT](PROJECT.md) defines the intended product. This design uses a small functional game core and thin browser adapters; [DECOMPOSITION](DECOMPOSITION.md) assigns component responsibilities, and [SPEC](SPEC.md) owns exact contracts.
 
 ## Blocks and dependency direction
 
@@ -24,3 +24,7 @@ The engine exposes transition functions over explicit state and immutable/read-o
 Canvas provides direct board rendering; native HTML keeps controls focusable and labels readable. A DOM board is viable but offers no required benefit for the bounded board. A UI framework and entity-component architecture add unnecessary machinery. This functional design uses small cohesive modules rather than inheritance or a plugin framework.
 
 Only a legal, fully contained, non-overlapping placement can be committed to the settled board. One transition owns lock, clear, score and spawn; a renderer or input callback cannot partially perform it. Snapshots own presentation data, not browser resources. Application teardown cancels owned animation/events and leaves unrelated browser state alone.
+
+## Enhanced game rules
+
+The piece source owns a shuffled seven-piece bag. Rotation geometry owns SRS orientation and ordered kick candidates. The engine owns Hold eligibility and grounded lock state. A single landing service computes the normal first reachable downward landing for both ghost and hard drop; callers never maintain separate collision logic. The controller supplies elapsed simulation time, while the engine owns deadline creation/cancellation. This separates game policy from frame scheduling.
