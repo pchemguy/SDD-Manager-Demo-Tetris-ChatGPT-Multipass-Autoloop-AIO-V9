@@ -19,6 +19,8 @@
 | Penetration rules | Engine-owned mode/inventory; landing-policy scan and safe adjustment validation | activate(), landing(...,penetrator) | Buried gaps, transient overlap, illegal terminal states and bonus cap |
 | Settings model | Defaults and six validated selections; lock policy snapshot at spawn | get(), set(key,value), subscribe() | Live switches and next-piece policies |
 | Settings/preview view | Labeled selects, non-consuming next preview and Hold availability | Settings notifications plus engine snapshot | Focus isolation and visible control/state agreement |
+| Configuration codec | Canonical keys/tokens and per-source independent validation | parse(key,raw), serialize(key,value), resolve(sources) | Mixed validity, omissions, defaults and duplicates |
+| Browser persistence | Cookie reads/writes and URL history replacement; memory fallback | load(), saveSetting(), warning result | Round-trip reload, blocked cookies and throwing history |
 
 ## Collaboration and ownership
 
@@ -31,3 +33,5 @@ The engine owns held piece, Hold availability, active orientation and lock deadl
 Penetrator mode and bonus count belong only to the engine. Placement/landing helpers receive mode explicitly; they do not spend bonuses. Rendering reads mode rather than guessing from shape color. Lock/clear awards inventory before the next spawn and resets mode.
 
 Settings own selections; each active piece owns its captured locking policies. A Hold replacement is a spawn for policy capture but does not restore Hold eligibility. The preview reads the next queue item without consumption.
+
+Startup resolution finishes before first spawn. Codec tests use string inputs and no DOM. Adapter tests supply fake cookie/history ports; browser tests verify real reload behavior. A failed persistence write returns a warning without rolling back the in-memory selection.
