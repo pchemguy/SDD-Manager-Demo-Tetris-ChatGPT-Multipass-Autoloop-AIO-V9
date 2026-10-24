@@ -85,3 +85,17 @@ Demonstration: Four-line awards, bounded inventory and presentation complete the
 ### Milestone 4.3 — Phase review
 
 Exactly one phase code review/testing/report task, after all delivery milestones complete and close. Verify applicable contracts, cross-milestone interactions, required browser matrix and preserved prior behavior; fix blockers, retain phase report and HANDOFF, then close the review milestone. Explicitly integrate the verified phase, check the merged result and publish/read back. Prepare version 0.4.0 and release notes; only after authorized implementation completion/integration publish its matching tag and GitHub release. No phase/release is complete while required checks or publication remain blocked.
+
+## Phase 5 — Session configuration
+
+Outcome: session configuration as a usable integrated capability. Contract scope: C-01–C-03 and configured interaction matrix. Target release: 0.5.0. Depends on verified, published integration and release of phase 4. Retain prior player-visible capabilities except the explicitly scheduled rule changes in this phase.
+
+### Milestone 5.1 — Live session settings
+
+Six settings and next preview work coherently within a page session. Depends on the phase entry baseline. Exit: integrated contract checks and applicable regressions pass; review the whole milestone code, repair blockers, commit the milestone report and refresh HANDOFF. The final implementation task owns these obligations unless task-count thresholds require a standalone review.
+
+Demonstration: Six settings and next preview work coherently within a page session. Inspect functional evidence and relevant usability/focus feedback before continuing; a consequential change may prompt continue/amend/simplify/stop direction without inventing an extra routine approval gate.
+
+### Milestone 5.2 — Phase review
+
+Exactly one phase code review/testing/report task, after all delivery milestones complete and close. Verify applicable contracts, cross-milestone interactions, required browser matrix and preserved prior behavior; fix blockers, retain phase report and HANDOFF, then close the review milestone. Explicitly integrate the verified phase, check the merged result and publish/read back. Prepare version 0.5.0 and release notes; only after authorized implementation completion/integration publish its matching tag and GitHub release. No phase/release is complete while required checks or publication remain blocked.
