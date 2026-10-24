@@ -33,3 +33,33 @@ All delivery milestones below have fewer than four implementation tasks, so thei
         - [ ] T-007 — Review, test and report phase 1
             Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-006.
             Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/1/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.1.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.
+
+## Phase 2 — Modern gameplay
+
+- [ ] Phase 2 — Modern gameplay
+    - [ ] Milestone 2.1 — Piece generation and manipulation
+        - [ ] T-008 — Implement seven-bag generation and peeking
+            Scope: src/core/source.ts and source tests. Contract: E-01 in SPEC. Depends on: prior phase review, integration/publication/release and eligible phase tracking.
+            Evidence: Permutation/refill/seed determinism and non-consuming peek. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-009 — Implement ordered SRS rotation candidates
+            Scope: src/core/geometry.ts, engine rotation and tests. Contract: E-01 in SPEC. Depends on: T-008.
+            Evidence: All clockwise transitions, I/JLSTZ/O differences, floor/wall late kicks and all-candidate rejection. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-010 — Integrate once-per-piece Hold
+            Scope: src/core/engine.ts, Hold view and interaction tests. Contract: E-02 in SPEC. Depends on: T-009.
+            Evidence: Empty/swap/blocked spawn, queue consumption, repeated C and lock-reset allowance. Include focused tests and relevant module/user documentation with this result.
+            Milestone exit: after all other milestone tasks, review whole-capability code, run required checks/regressions, repair blockers and commit docs/dev/reports/phases/2/2.1.md plus HANDOFF with this task’s implementation and initial checkbox. Record findings separately from eligible non-critical TODOs; verified issue/milestone closure precedes dependent phase review.
+    - [ ] Milestone 2.2 — Landing preview and delayed locking
+        - [ ] T-011 — Implement shared landing, ghost and hard drop
+            Scope: src/core/landing.ts, engine drop, view and focused tests. Contract: E-02 in SPEC. Depends on: T-010.
+            Evidence: Obstacle-limited landing, zero-distance drop and visible projection/drop equality. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-012 — Implement grounding deadline semantics
+            Scope: src/core/engine.ts and deterministic time tests. Contract: E-03 in SPEC. Depends on: T-011.
+            Evidence: Grounded no-reset, airborne cancel/reground, drop behavior and timestamp precedence. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-013 — Verify enhanced browser interactions and delivery
+            Scope: browser tests, keyboard/status view and README. Contract: E-01–E-03, Q-01 in SPEC. Depends on: T-012.
+            Evidence: Hold/drop/ghost interactions, hidden/resume deadlines, two-browser screenshots and classic regression. Include focused tests and relevant module/user documentation with this result.
+            Milestone exit: after all other milestone tasks, review whole-capability code, run required checks/regressions, repair blockers and commit docs/dev/reports/phases/2/2.2.md plus HANDOFF with this task’s implementation and initial checkbox. Record findings separately from eligible non-critical TODOs; verified issue/milestone closure precedes dependent phase review.
+    - [ ] Milestone 2.3 — Phase review
+        - [ ] T-014 — Review, test and report phase 2
+            Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-013.
+            Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/2/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.2.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.
