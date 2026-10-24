@@ -31,3 +31,23 @@ Demonstration: Real keyboard play, visible state and restart run in the supporte
 ### Milestone 1.3 — Phase review
 
 Exactly one phase code review/testing/report task, after all delivery milestones complete and close. Verify applicable contracts, cross-milestone interactions, required browser matrix and preserved prior behavior; fix blockers, retain phase report and HANDOFF, then close the review milestone. Explicitly integrate the verified phase, check the merged result and publish/read back. Prepare version 0.1.0 and release notes; only after authorized implementation completion/integration publish its matching tag and GitHub release. No phase/release is complete while required checks or publication remain blocked.
+
+## Phase 2 — Modern gameplay
+
+Outcome: modern gameplay as a usable integrated capability. Contract scope: E-01–E-03, preserved baseline outcomes, Q-01. Target release: 0.2.0. Depends on verified, published integration and release of phase 1. Retain prior player-visible capabilities except the explicitly scheduled rule changes in this phase.
+
+### Milestone 2.1 — Piece generation and manipulation
+
+7-bag, clockwise SRS and Hold integrate without breaking ordinary movement. Depends on the phase entry baseline. Exit: integrated contract checks and applicable regressions pass; review the whole milestone code, repair blockers, commit the milestone report and refresh HANDOFF. The final implementation task owns these obligations unless task-count thresholds require a standalone review.
+
+Demonstration: 7-bag, clockwise SRS and Hold integrate without breaking ordinary movement. Inspect functional evidence and relevant usability/focus feedback before continuing; a consequential change may prompt continue/amend/simplify/stop direction without inventing an extra routine approval gate.
+
+### Milestone 2.2 — Landing preview and delayed locking
+
+Ghost/drop agreement and full-interval locking produce adjustable landings. Depends on the preceding delivery milestone. Exit: integrated contract checks and applicable regressions pass; review the whole milestone code, repair blockers, commit the milestone report and refresh HANDOFF. The final implementation task owns these obligations unless task-count thresholds require a standalone review.
+
+Demonstration: Ghost/drop agreement and full-interval locking produce adjustable landings. Inspect functional evidence and relevant usability/focus feedback before continuing; a consequential change may prompt continue/amend/simplify/stop direction without inventing an extra routine approval gate.
+
+### Milestone 2.3 — Phase review
+
+Exactly one phase code review/testing/report task, after all delivery milestones complete and close. Verify applicable contracts, cross-milestone interactions, required browser matrix and preserved prior behavior; fix blockers, retain phase report and HANDOFF, then close the review milestone. Explicitly integrate the verified phase, check the merged result and publish/read back. Prepare version 0.2.0 and release notes; only after authorized implementation completion/integration publish its matching tag and GitHub release. No phase/release is complete while required checks or publication remain blocked.
