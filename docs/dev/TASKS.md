@@ -109,3 +109,22 @@ All delivery milestones below have fewer than four implementation tasks, so thei
         - [ ] T-024 — Review, test and report phase 4
             Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-023.
             Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/4/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.4.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.
+
+## Phase 5 — Session configuration
+
+- [ ] Phase 5 — Session configuration
+    - [ ] Milestone 5.1 — Live session settings
+        - [ ] T-025 — Implement validated settings and spawn policy capture
+            Scope: src/config/settings.ts, engine/controller and tests. Contract: C-01–C-02 in SPEC. Depends on: prior phase review, integration/publication/release and eligible phase tracking.
+            Evidence: Defaults/token rejection, immediate switches, captured lock policies through spawn/Hold/restart. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-026 — Integrate native settings controls and next preview
+            Scope: settings/preview view, styles and browser tests. Contract: C-01 in SPEC. Depends on: T-025.
+            Evidence: All six controls, non-consuming preview, focus isolation and retained Hold slot. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-027 — Verify configuration combinations and session lifetime
+            Scope: engine/browser scenarios and README. Contract: C-01–C-03 in SPEC. Depends on: T-026.
+            Evidence: Policy cross-product including penetrators/zero drop; no persistence writes; restart retention and reload defaults in both browsers. Include focused tests and relevant module/user documentation with this result.
+            Milestone exit: after all other milestone tasks, review whole-capability code, run required checks/regressions, repair blockers and commit docs/dev/reports/phases/5/5.1.md plus HANDOFF with this task’s implementation and initial checkbox. Record findings separately from eligible non-critical TODOs; verified issue/milestone closure precedes dependent phase review.
+    - [ ] Milestone 5.2 — Phase review
+        - [ ] T-028 — Review, test and report phase 5
+            Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-027.
+            Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/5/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.5.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.

@@ -4,11 +4,12 @@
 
 State: Ready for dependent bounded implementation after separate package/integration/activation authority. No unresolved confirmed findings within this artifact review.
 
-Reviewed/governing identities: TASKS.md: SHA-256 3e82cb69197b310f3c9b856f221e6495d4eedbcd2054591ca343ac2a8987b5e0; SPEC.md: SHA-256 3b472cb78835a3aefcbd3b57215d5485ebf534348823b8d254c9fde06d4fd5b9; SPEC-REVIEW-REPORT.md: SHA-256 41fdcf95f3ea8147d87d608a47f22574fee851ef22ceac6e94ffb2ffe8c9cf59; PLAN.md: SHA-256 48f39dd6bca35d7a3fe46748121899c4622d8523ce5fd72bb1f3f121d248cd8e; PLAN-REVIEW-REPORT.md: SHA-256 149fb47a734ff857637b2012f0bb5de0fcd17f0e0e7023802c3bba857d36f3e0; layout.md: SHA-256 8eaaee4a7bae06765f2682a8eb4ba62ab4e0aa6c9fcb8b937bb39d3ff2ed86dc.
+Reviewed/governing identities: TASKS.md: SHA-256 b583e2a7a7ec8c44cdc4c844f96ad1f0da0a3f4f7dcd2ff5d1c83ee5da68544f; SPEC.md: SHA-256 46995408d2639c79e077c2830172330c85b7a9b029fa930f5ded0bbe4dc04687; SPEC-REVIEW-REPORT.md: SHA-256 bf709a401acc1e644542059107c454ab5f1c4046081412f881af3c999227ef70; PLAN.md: SHA-256 f7407c8af65d90ac2203c76ad7bf769930ffed5481ef0e67cc45efc60b6a4761; PLAN-REVIEW-REPORT.md: SHA-256 036c14a4e95b4ba20fbbfffd5ab042ce0d3abf8ea04e9007bca36adf7eee35b7; layout.md: SHA-256 cf519f0bae7b27874eaa33198ee8353128756be3f799768f2e4b05abf2bc2ce4.
 
 Methods: owner semantic review plus executable local link/spacing/whitespace, contract-coverage, hierarchy and protected-range checks. These are document checks; product code/tests/browser behavior have not been executed. This is not whole-package DOCS-009 QC.
 
 ## Review history
+
 
 
 
@@ -98,6 +99,35 @@ Reviewed every milestone outcome against executable task scopes, prerequisites, 
 | Milestone 4.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
 | Milestone 4.2 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
 | Phase 4 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+
+Prior-pass PLAN/TASKS phase blocks are compared byte for byte before append; names, membership, order, dependencies and exits are retained. No flexible exception is used.
+
+
+Findings: no unresolved confirmed conformance issue in the reviewed scope. Numerical departures are assessed above rather than padded. Recheck: automated document validation plus source-level semantic review; evidence does not certify implementation.
+
+### Revision 4
+
+Date: 2026-10-24. Reviewer: authoring agent acting as the focused document owner. Scope: cumulative Session-only configuration; artifact.
+
+Sources: TASKS.md: SHA-256 b583e2a7a7ec8c44cdc4c844f96ad1f0da0a3f4f7dcd2ff5d1c83ee5da68544f; SPEC.md: SHA-256 46995408d2639c79e077c2830172330c85b7a9b029fa930f5ded0bbe4dc04687; SPEC-REVIEW-REPORT.md: SHA-256 bf709a401acc1e644542059107c454ab5f1c4046081412f881af3c999227ef70; PLAN.md: SHA-256 f7407c8af65d90ac2203c76ad7bf769930ffed5481ef0e67cc45efc60b6a4761; PLAN-REVIEW-REPORT.md: SHA-256 036c14a4e95b4ba20fbbfffd5ab042ce0d3abf8ea04e9007bca36adf7eee35b7; layout.md: SHA-256 cf519f0bae7b27874eaa33198ee8353128756be3f799768f2e4b05abf2bc2ce4.
+
+Reviewed every milestone outcome against executable task scopes, prerequisites, contract IDs and concrete verification. Unique task IDs, four-space hierarchy, folded milestone review obligations and one separate phase-review task per phase checked. No implementation checkbox is checked.
+
+| Group | Delivery count | Excluded reviews | Scope/count assessment |
+| --- | --- | --- | --- |
+| Milestone 1.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Milestone 1.2 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Phase 1 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+| Milestone 2.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Milestone 2.2 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Phase 2 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+| Milestone 3.1 | 2 tasks | No standalone milestone review | Two tasks separate a pure predicate from browser integration; small scope justifies count. |
+| Phase 3 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+| Milestone 4.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Milestone 4.2 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Phase 4 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
+| Milestone 5.1 | 3 tasks | No standalone milestone review | Three bounded delivery tasks separate rule/model, integration and acceptance; final delivery task owns whole-milestone evidence. |
+| Phase 5 review | 0 delivery tasks | Exactly one separate review task | Preserved special review unit, excluded from delivery counts. |
 
 Prior-pass PLAN/TASKS phase blocks are compared byte for byte before append; names, membership, order, dependencies and exits are retained. No flexible exception is used.
 
