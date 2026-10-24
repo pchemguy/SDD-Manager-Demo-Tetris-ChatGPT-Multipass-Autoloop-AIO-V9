@@ -25,6 +25,6 @@ Checkpoint: main preparation, pass 2 reset, DOCS-002 next; issue reopening requi
 ## Pending work and next action
 
 - Current pass: 6, Configuration persistence. Governing scope/decisions and exact evidence remain in DOCS_PREPARATION.
-- Publish/read back reset and reopen/read back same issues 2–9 before PROJECT revision; issue 1 stays closed and milestone stays open.
-- Next eligible action: authorized autoloop reset to the next predefined scope; retain documents/ranges, uncheck DOCS-002–009 and reopen same issues before document revisions.
+- Publish/read back this DOCS-008 completion commit, then close/read back issue 8. Issue 9 and sdd-docs-main remain open.
+- Authorized endpoint reached after issue 8 closure: stop before DOCS-009, whole-package QC, documentation merge, implementation or phase activation. Human may separately select package QC/integration.
 - No game implementation or product release exists.

@@ -128,3 +128,22 @@ All delivery milestones below have fewer than four implementation tasks, so thei
         - [ ] T-028 — Review, test and report phase 5
             Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-027.
             Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/5/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.5.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.
+
+## Phase 6 — Persistent configuration
+
+- [ ] Phase 6 — Persistent configuration
+    - [ ] Milestone 6.1 — URL and cookie configuration
+        - [ ] T-029 — Implement canonical codec and source resolution
+            Scope: src/config/codec.ts and focused table-driven tests. Contract: S-01 in SPEC. Depends on: prior phase review, integration/publication/release and eligible phase tracking.
+            Evidence: All six keys, mixed validity, explicit defaults, omissions, duplicates and malformed cookies. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-030 — Integrate startup and browser persistence adapter
+            Scope: src/browser/persistence.ts, composition and adapter tests. Contract: S-01–S-02 in SPEC. Depends on: T-029.
+            Evidence: Resolve before first spawn; independent cookie/history attempts; blocked reads/writes, silent rejection and warning. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-031 — Verify persistence round-trips and complete delivery
+            Scope: browser tests, README and failure scenarios. Contract: S-01–S-02, C-01–C-02, Q-01 in SPEC. Depends on: T-030.
+            Evidence: All six settings across reload/reopen; defaults overriding cookies, omitted retention, unrelated URL/fragment and active gameplay regression in both browsers. Include focused tests and relevant module/user documentation with this result.
+            Milestone exit: after all other milestone tasks, review whole-capability code, run required checks/regressions, repair blockers and commit docs/dev/reports/phases/6/6.1.md plus HANDOFF with this task’s implementation and initial checkbox. Record findings separately from eligible non-critical TODOs; verified issue/milestone closure precedes dependent phase review.
+    - [ ] Milestone 6.2 — Phase review
+        - [ ] T-032 — Review, test and report phase 6
+            Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-031.
+            Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/6/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.6.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.
