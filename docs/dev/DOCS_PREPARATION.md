@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 3, Conditional ghost visibility; cursor DOCS-008.
+- Current scope: pass 3, Conditional ghost visibility; cursor DOCS-009.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -108,7 +108,12 @@ Prior pass completion: b3298b35a2af597ac507f497a8fea3e27f7dec4c. Next scope: Con
 - DOCS-005: SPEC.md, SHA-256 25e5eaa96608d2247cdd0f6f8c79b45d80fbb907b0044f6c50d5b14f7cb8a5da; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. SPEC-REVIEW-REPORT.md records current design/contract QC; no unresolved blockers.
 - DOCS-006: PLAN.md, SHA-256 d7ece063f4799e4595fbc62dbf76d9e8bf398314b34bd909046b5d5dfdde48f8; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. PLAN-REVIEW-REPORT.md records strategy QC, count rationale and protected phases.
 - DOCS-007: layout.md, SHA-256 8eaaee4a7bae06765f2682a8eb4ba62ab4e0aa6c9fcb8b937bb39d3ff2ed86dc; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. PLAN-REVIEW-REPORT.md records strategy/layout QC, count rationale and protected phases.
+- DOCS-008: TASKS.md, SHA-256 35ff5cc449f73695db7359668e3fd68bda84783257bc289302605ba1eff91437; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. TASKS-REVIEW-REPORT.md records derivation QC and protected prior task ranges. New task range: T-015–T-017.
 
 ## Pending transitions
 
 Publish/read back the owning completion commit, then close/read back its same DOCS issue before dependent work. No implementation activation or package QC is authorized.
+
+## Pass 3 result
+
+Current cumulative scope Conditional ghost visibility is covered through DOCS-008; per-document gates are recorded above. PLAN/TASKS phases 1–3 retained with new phase 3 and task range T-015–T-017. Earlier phase blocks remain byte-identical. No new product decision supersedes the accepted cross-scope decisions. Publish/close issue 8 before reset or final stop; DOCS-009 remains unchecked.

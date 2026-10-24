@@ -63,3 +63,19 @@ All delivery milestones below have fewer than four implementation tasks, so thei
         - [ ] T-014 — Review, test and report phase 2
             Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-013.
             Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/2/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.2.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.
+
+## Phase 3 — Dynamic ghost visibility
+
+- [ ] Phase 3 — Dynamic ghost visibility
+    - [ ] Milestone 3.1 — Midline-aware ghost
+        - [ ] T-015 — Implement whole-footprint visibility predicate
+            Scope: src/view/ghost.ts and predicate tests. Contract: G-01 in SPEC. Depends on: prior phase review, integration/publication/release and eligible phase tracking.
+            Evidence: Upper, straddling, min-row 9 and min-row 10 cases. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-016 — Integrate and verify dynamic ghost rendering
+            Scope: Canvas view, browser tests and README. Contract: G-01, E-02 in SPEC. Depends on: T-015.
+            Evidence: Move/rotate/spawn and board-change transitions; show/hide return paths; identical hard-drop landings in both browsers. Include focused tests and relevant module/user documentation with this result.
+            Milestone exit: after all other milestone tasks, review whole-capability code, run required checks/regressions, repair blockers and commit docs/dev/reports/phases/3/3.1.md plus HANDOFF with this task’s implementation and initial checkbox. Record findings separately from eligible non-critical TODOs; verified issue/milestone closure precedes dependent phase review.
+    - [ ] Milestone 3.2 — Phase review
+        - [ ] T-017 — Review, test and report phase 3
+            Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-016.
+            Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/3/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.3.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.
