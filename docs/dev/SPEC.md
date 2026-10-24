@@ -41,6 +41,42 @@ Choose each next shape independently using injected uniform random draws over th
 
 Acceptance: controlled randomness may repeat a shape; a blocked rotation leaves origin/orientation unchanged; floor arrival and subsequent failed downward attempt are distinguished.
 
+B-05 defines the classic delivery boundary. The modern gameplay delivery applies E-01 through E-03 in place of B-05 randomization, rotation and locking; all unaffected board, input, timing and scoring contracts remain applicable.
+
+## E-01 — Seven-bag source and rotation
+
+Generate each bag by Fisher–Yates shuffle over all seven types using injected uniform RNG. Consume each bag fully before the next; a fresh game starts a fresh bag. The next queue is deterministic for a fixed RNG stream. Use standard clockwise SRS orientation transitions and ordered JLSTZ and I kick tables, with vertical offsets translated into this downward-positive coordinate system. O rotates without changing its occupied cells. Reject when every candidate fails; never accept an out-of-board occupied cell. Use the ordered offsets below, expressed as (dx,dy) with positive y downward. Tests independently assert these normative offsets and exercise real collision scenarios; no counterclockwise or 180-degree input is required.
+
+Acceptance: every consecutive source bag is a permutation, refill preserves the stream, O is stable, and wall/floor/stack cases exercise successful late kicks and complete rejection.
+
+
+### Clockwise kick offsets
+
+| Transition | JLSTZ ordered offsets | I ordered offsets |
+| --- | --- | --- |
+| 0 to R | (0,0), (-1,0), (-1,-1), (0,2), (-1,2) | (0,0), (-2,0), (1,0), (-2,1), (1,-2) |
+| R to 2 | (0,0), (1,0), (1,1), (0,-2), (1,-2) | (0,0), (-1,0), (2,0), (-1,-2), (2,1) |
+| 2 to L | (0,0), (1,0), (1,-1), (0,2), (1,2) | (0,0), (2,0), (-1,0), (2,-1), (-1,2) |
+| L to 0 | (0,0), (-1,0), (-1,1), (0,-2), (-1,-2) | (0,0), (1,0), (-2,0), (1,2), (-2,-1) |
+
+O uses only (0,0). Select the first candidate satisfying the active mode’s bounds/placement constraints. These clockwise SRS kick conventions operate under B-06’s fully-contained visible-board rule; full Tetris Guideline compliance is not a requirement.
+
+## E-02 — Hold, ghost and hard drop
+
+C holds the active shape once before its next lock; repeated keydown is ignored. Empty Hold stores it and draws from the queue; populated Hold swaps without consuming the queue. The replacement starts in spawn orientation/location; failure ends the game. Hold resets the active grounding state but does not restore the consumed Hold allowance. A lock restores allowance. Restart clears the slot.
+
+Space hard-drops on non-repeated keydown to the ordinary lowest reachable legal landing: iterate downward until the first blocked candidate, then choose the preceding legal row. Do not cross intervening obstacles. A hard drop with zero distance is still a drop command subject to the selected locking policy. Hard drop awards no extra score. The ghost projects the same shape/orientation at exactly that landing and is visually distinct from active and settled cells. It never changes physics or board state. Rendering the active piece above the ghost avoids ambiguity when they coincide.
+
+Acceptance: empty/populated/repeated Hold, blocked replacement spawn, matching ghost/drop positions, intervening obstacles and zero-distance drop are verified.
+
+## E-03 — Grounding and lock delay
+
+A piece is grounded when it is at its applicable terminal landing. On first grounding, start a 1000 ms simulation-time deadline. Grounded lateral moves and rotations preserve it if still grounded. Becoming airborne cancels it; later grounding starts a new full interval. A failed down attempt does not shorten interval locking. A hard drop starts a full interval at landing unless an existing grounded deadline remains applicable; it never resets such a deadline. At expiry, revalidate legal placement before locking; an illegal transient state cannot be committed. Hold/new spawn clears the old deadline.
+
+Acceptance: arrival at time t cannot lock before t+1000; repeated grounded adjustments/drop do not postpone it; airborne cancellation and regrounding start a new deadline; hidden time does not consume it.
+
+Ghost visibility is always enabled.
+
 ## Q-01 — Quality, delivery and verification
 
 The application runs without backend calls and exposes understandable score, lines and game status through native HTML. Board and controls remain usable without overlap at desktop viewport sizes; keyboard focus is visible. Rendering and event hookup must not create multiple animation loops after restart. Core tests control time/randomness and test transitions without DOM. Browser checks exercise real inputs, focus, screenshots and restart in isolated Chromium primary and compatible managed Firefox secondary under BROWSER_DEV_POLICY.md. Required browser failures are reported separately and block affected acceptance; a passing unit suite does not waive them.
