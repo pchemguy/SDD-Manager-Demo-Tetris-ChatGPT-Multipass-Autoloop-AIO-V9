@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 1, Playable classic baseline; cursor DOCS-009.
+- Current scope: pass 2, Gameplay enhancements; cursor DOCS-002 after authorized autoloop reset.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -63,7 +63,7 @@ The recommendations below originated with the agent during initial exploration a
 - Original retained roots: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md, SKILL_DISCOVERY_PROTOCOL.md. Copied roots: none. All four present, so no mixed-initialization pause applies.
 - Provenance: default enabled; two scaffold assets copied byte for byte, without transcripts. Base main 00d05adb658650f8f5bd2c096dcfd90b1a84e9fc; seed c3fcd9b7c917cc38bbdc34bf65281a119f05bede; explicit two-parent main merge 88474bff25c572f5ee8a3bb75f98d801c15d2b6f. Both published with exact matching remote readback and confirmed cleanup.
 - Credential: conventional gh.tkn saved only after complete projection, with *.tkn ignored and path untracked. No credential is part of project documents.
-- Current reset: none; no prior delivery ranges exist yet.
+- Current reset: pass 1 DOCS-008 completed/published; advance to predefined pass 2 under accepted autoloop authority. Preserve all documents/ranges, uncheck DOCS-002–009 and reopen same issues after reset publication before revisions.
 
 ## Pass 1 document evidence
 
@@ -81,3 +81,7 @@ Publish/read back the owning completion commit, then close/read back its same DO
 ## Pass 1 result
 
 Current cumulative scope Playable classic baseline is covered through DOCS-008; per-document gates are recorded above. PLAN/TASKS phases 1–1 retained with new phase 1 and task range T-001–T-007. Earlier phase blocks remain byte-identical. No new product decision supersedes the accepted cross-scope decisions. Publish/close issue 8 before reset or final stop; DOCS-009 remains unchecked.
+
+## Reset to pass 2
+
+Prior pass completion: 7d4024ecc9e20bc62be2be9f7ce66930db3e13c6. Next scope: Gameplay enhancements. Accepted autoloop authority; retain earlier decisions and strict protected ranges. No Git reset/deletion. Same issues 2–9 require open-state readback after publication.
