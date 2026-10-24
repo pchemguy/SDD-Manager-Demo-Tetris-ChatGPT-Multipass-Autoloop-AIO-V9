@@ -81,6 +81,20 @@ Dynamic visibility shows the whole ghost if and only if every projected occupied
 
 Acceptance: footprints with minimum rows 9 and 10 distinguish the boundary, straddling hides, and transitions from lower to upper and back update without stale ghosts.
 
+## P-01 — Activation, motion and legal landing
+
+P on non-repeated keydown activates the current running piece only if at least one bonus exists and it is not already active. Spend exactly one bonus on success; otherwise leave state unchanged. Activation lasts until this piece locks or the game restarts/ends. Hold is disabled while active, even if its setting is enabled; attempted Hold cannot spend a bonus, change the slot or consume queue entries.
+
+Penetrator translation and SRS candidates may cross/temporarily overlap occupied cells without changing them. They must keep occupied cells within board bounds and leave at least one legal non-overlapping placement at or below the proposed origin in that column/orientation. A candidate failing that future-landing predicate is rejected, including a kick candidate; test later kick candidates in order. A penetrator terminal landing is the greatest origin row at or below its current origin yielding a legal non-overlapping placement, scanning through occupied intermediate rows. Gravity/soft drop advances toward that terminal row and stops there; it must not step below it into an unresolvable overlap. Hard drop moves directly to it, and the ghost uses exactly the same projection. No landing may move the piece upward. Activation preserves a deadline only if still grounded; otherwise cancels it.
+
+Acceptance: buried holes, separated legal gaps, a solid bottom row, overlapping transit, rejected no-landing adjustments, unchanged settled cells, Hold rejection and same ghost/drop terminal position are tested. Locking always revalidates containment/non-overlap.
+
+## P-02 — Inventory and presentation
+
+Start with zero bonuses. Exactly four rows cleared by one lock awards one bonus, whether the piece was ordinary or penetrating. Cap inventory at three; spending happens on activation before any later award. Restart resets inventory to zero. Render every occupied active penetrator cell white, with no colored fills; regular shapes use non-white colors. White borders are not required. A visible penetrator ghost uses white with a distinct outline/opacity. Show one lightning symbol per available bonus (zero means none) plus an accessible numeric label, updating immediately on earn/spend. Locked penetrator cells retain their shape’s regular non-white color because mode lifetime ends at lock.
+
+Acceptance: 0/1/2/3 counts, capped awards, earn-after-spend, no award for fewer rows, restart and white active/non-white ordinary rendering are verified.
+
 ## Q-01 — Quality, delivery and verification
 
 The application runs without backend calls and exposes understandable score, lines and game status through native HTML. Board and controls remain usable without overlap at desktop viewport sizes; keyboard focus is visible. Rendering and event hookup must not create multiple animation loops after restart. Core tests control time/randomness and test transitions without DOM. Browser checks exercise real inputs, focus, screenshots and restart in isolated Chromium primary and compatible managed Firefox secondary under BROWSER_DEV_POLICY.md. Required browser failures are reported separately and block affected acceptance; a passing unit suite does not waive them.

@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 4, Penetrator mode; cursor DOCS-005.
+- Current scope: pass 4, Penetrator mode; cursor DOCS-006.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -123,6 +123,7 @@ Prior pass completion: 56e46a0a1d93fe64b4fb751414aec194b5c6f4ea. Next scope: Pen
 - DOCS-002: PROJECT.md, SHA-256 0e50d76a298ba2cbf7f05eca44849ac3413cf05f7c6c66c604ac16664031ecb8; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
 - DOCS-003: ARCHITECTURE.md, SHA-256 e2e65c92ab828df0b1d42611ec89f04816be9c3e785b35666fea1ac3f55c2f9f; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
 - DOCS-004: DECOMPOSITION.md, SHA-256 cb8207a6b45e565b44786504bf2a339e24cc9a69ea81476392eab500a9387153; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
+- DOCS-005: SPEC.md, SHA-256 3b472cb78835a3aefcbd3b57215d5485ebf534348823b8d254c9fde06d4fd5b9; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. SPEC-REVIEW-REPORT.md records current design/contract QC; no unresolved blockers.
 
 ## Pending transitions
 
