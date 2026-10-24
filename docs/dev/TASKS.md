@@ -79,3 +79,33 @@ All delivery milestones below have fewer than four implementation tasks, so thei
         - [ ] T-017 — Review, test and report phase 3
             Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-016.
             Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/3/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.3.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.
+
+## Phase 4 — Penetrator gameplay
+
+- [ ] Phase 4 — Penetrator gameplay
+    - [ ] Milestone 4.1 — Safe penetration movement
+        - [ ] T-018 — Implement penetrating landing and safe adjustments
+            Scope: src/core/landing.ts, geometry/engine movement and tests. Contract: P-01 in SPEC. Depends on: prior phase review, integration/publication/release and eligible phase tracking.
+            Evidence: Buried gaps, bottom obstruction, no-upward result and rejected adjustments with no future landing. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-019 — Integrate activation, Hold exclusion and locking
+            Scope: src/core/engine.ts, input mapping and tests. Contract: P-01, E-03 in SPEC. Depends on: T-018.
+            Evidence: Spend once, repeated P, overlapping transit, legal commit, deadline cancellation and Hold rejection. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-020 — Verify penetrating drop and ghost agreement
+            Scope: core integration and browser scenarios. Contract: P-01, G-01 in SPEC. Depends on: T-019.
+            Evidence: Lowest valid gap, drop through obstacles, midline visibility and ordinary-mode regression. Include focused tests and relevant module/user documentation with this result.
+            Milestone exit: after all other milestone tasks, review whole-capability code, run required checks/regressions, repair blockers and commit docs/dev/reports/phases/4/4.1.md plus HANDOFF with this task’s implementation and initial checkbox. Record findings separately from eligible non-critical TODOs; verified issue/milestone closure precedes dependent phase review.
+    - [ ] Milestone 4.2 — Bonus feedback and complete mode
+        - [ ] T-021 — Implement atomic bonus awards and cap
+            Scope: engine lock/clear state and tests. Contract: P-02 in SPEC. Depends on: T-020.
+            Evidence: 0–3 bounds, four-line-only award, spend then award, restart resets. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-022 — Render white activation and accessible bonus count
+            Scope: Canvas/status view, styles and screenshot tests. Contract: P-02 in SPEC. Depends on: T-021.
+            Evidence: Entire active white, regular non-white, distinct ghost and symbol count matches inventory. Include focused tests and relevant module/user documentation with this result.
+        - [ ] T-023 — Verify full penetrator play and reproducible delivery
+            Scope: browser scenarios and README. Contract: P-01–P-02, E-03, G-01, Q-01 in SPEC. Depends on: T-022.
+            Evidence: Earn/activate/drop/lock/restart, Hold refusal, timing and two-browser regression with no cell destruction. Include focused tests and relevant module/user documentation with this result.
+            Milestone exit: after all other milestone tasks, review whole-capability code, run required checks/regressions, repair blockers and commit docs/dev/reports/phases/4/4.2.md plus HANDOFF with this task’s implementation and initial checkbox. Record findings separately from eligible non-critical TODOs; verified issue/milestone closure precedes dependent phase review.
+    - [ ] Milestone 4.3 — Phase review
+        - [ ] T-024 — Review, test and report phase 4
+            Scope: whole phase code and integration, applicable SPEC contracts and PLAN exits. Depends on: all phase delivery milestones completed/closed; last delivery task T-023.
+            Evidence: separate code review and required tests, repaired blockers, docs/dev/reports/phases/4/PHASE-REPORT.md and refreshed HANDOFF; verify target merge and publication before release 0.4.0. Prepare version/notes and publish matching GitHub release only after authorized implementation is verified and integrated. Required browser failures remain blockers.
