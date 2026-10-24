@@ -16,6 +16,7 @@
 | Landing/rotation | Ordinary landing and ordered SRS kick candidates; no mode lifetime | landing(board,piece,mode), rotate(board,piece) | Obstacles, walls/floor and orientation cases |
 | Hold/lock state | Engine-owned Hold slot, per-piece eligibility and grounded deadline | Engine commands and snapshot fields | Swap/spawn failures and exact deadline boundaries |
 | Ghost visibility | Whole-footprint midline predicate; never alters projection | visibleGhost(cells, policy) | All-upper, straddling and all-lower cases |
+| Penetration rules | Engine-owned mode/inventory; landing-policy scan and safe adjustment validation | activate(), landing(...,penetrator) | Buried gaps, transient overlap, illegal terminal states and bonus cap |
 
 ## Collaboration and ownership
 
@@ -24,3 +25,5 @@ Composition creates the random source, engine, controller and views once. Keyboa
 Restart resets engine-owned gameplay state and clock anchors; it does not install a second listener set. Hidden-page suspension is a controller concern. Game over stops gameplay transitions but permits restart. Input fields and native controls retain their keyboard behavior. Rendering is a one-way read of state, so tests can exercise rules without screenshots and browser tests can assess actual presentation and focus.
 
 The engine owns held piece, Hold availability, active orientation and lock deadline. Landing projection is pure and shared by ghost/drop. A swap creates a new active spawn transaction, while Hold-use eligibility remains consumed until lock. Lock timing does not live in setTimeout callbacks.
+
+Penetrator mode and bonus count belong only to the engine. Placement/landing helpers receive mode explicitly; they do not spend bonuses. Rendering reads mode rather than guessing from shape color. Lock/clear awards inventory before the next spawn and resets mode.
