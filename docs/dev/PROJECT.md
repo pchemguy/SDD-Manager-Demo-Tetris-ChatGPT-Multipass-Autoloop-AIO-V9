@@ -20,7 +20,7 @@ Bonus-gated penetrator activation lets the current piece pass through settled ce
 
 Six side-panel settings control ghost visibility, hard drop, next preview, hard-drop locking, general locking and Hold. Feature toggles apply immediately; locking-policy selections affect the next spawned piece. Disabling Hold preserves its stored piece. Restart retains selected settings.
 
-Settings live only in memory for the current page session and return to defaults on reload.
+Each setting independently resolves a valid explicit URL value, then a valid cookie, then its default. Player changes update both cookie and URL. Valid explicit URL values are saved even when equal to defaults; omitted parameters preserve cookies. Invalid values fall through independently without overwriting valid saved choices. Persistence failures leave gameplay operational and display a concise warning.
 
 ## Non-goals and intended outcome
 
