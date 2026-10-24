@@ -14,6 +14,8 @@ The classic game has a 10×20 visible board, seven tetromino shapes, movement, c
 
 Hold, a landing ghost, 7-bag generation, SRS clockwise wall kicks and hard drop support modern play. Grounded pieces normally receive one full gravity interval before locking; grounded adjustments do not reset that delay.
 
+The ghost is shown only when its entire projected footprint is in the lower half of the board. A footprint straddling the midline is hidden.
+
 ## Non-goals and intended outcome
 
 No accounts, multiplayer, online leaderboard, backend, touch controls, audio or level progression is required. Success is a complete responsive game with clear status, predictable rules and verified interactions across its enabled capabilities. The documents define intended behavior; they do not claim a delivered implementation.

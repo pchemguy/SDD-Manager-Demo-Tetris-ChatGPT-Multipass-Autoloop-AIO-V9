@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, selected by the user request of 24 October 2026.
 - Delivery mode: strict by default; no flexible integration permission supplied. Preserve every established earlier phase/task range.
-- Current scope: pass 3, Conditional ghost visibility; cursor DOCS-002 after authorized autoloop reset.
+- Current scope: pass 3, Conditional ghost visibility; cursor DOCS-003.
 - Authority: initialization and document preparation authorized; first PROJECT and presented interaction choices accepted by the user’s “Approve” response. Later PROJECT approvals are waived, and subsequent document checkpoints are preapproved by the requested mode. Newly discovered material choices after that approval are delegated with visible rationale.
 - Stop: after pass 6 DOCS-008; DOCS-009, whole-package QC, documentation integration, implementation and implementation activation remain outside this range.
 - Tracking: root AGENTS.md enables documentation and implementation tracking by default. Complete preparation projection verified before target writes: native milestone 1, sdd-docs-main, and DOCS-001–009 issues 1–9, exact template briefs and associations read back. Milestone and all issues initially open.
@@ -92,10 +92,6 @@ Prior pass completion: 7d4024ecc9e20bc62be2be9f7ce66930db3e13c6. Next scope: Gam
 - DOCS-007: layout.md, SHA-256 48bc59a4313ec49c7d5299d29f0026bcaac1058d3ccdaed22a9a5d99e0388391; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. PLAN-REVIEW-REPORT.md records strategy/layout QC, count rationale and protected phases.
 - DOCS-008: TASKS.md, SHA-256 3c6d212f6df4a6f08d93061d4d134628028abaa3ba6b085a34c40e10b8874460; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing. TASKS-REVIEW-REPORT.md records derivation QC and protected prior task ranges. New task range: T-008–T-014.
 
-## Pending transitions
-
-Publish/read back the owning completion commit, then close/read back its same DOCS issue before dependent work. No implementation activation or package QC is authorized.
-
 ## Pass 2 result
 
 Current cumulative scope Gameplay enhancements is covered through DOCS-008; per-document gates are recorded above. PLAN/TASKS phases 1–2 retained with new phase 2 and task range T-008–T-014. Earlier phase blocks remain byte-identical. No new product decision supersedes the accepted cross-scope decisions. Publish/close issue 8 before reset or final stop; DOCS-009 remains unchecked.
@@ -103,3 +99,11 @@ Current cumulative scope Gameplay enhancements is covered through DOCS-008; per-
 ## Reset to pass 3
 
 Prior pass completion: b3298b35a2af597ac507f497a8fea3e27f7dec4c. Next scope: Conditional ghost visibility. Accepted autoloop authority; retain earlier decisions and strict protected ranges. No Git reset/deletion. Same issues 2–9 require open-state readback after publication.
+
+## Pass 3 document evidence
+
+- DOCS-002: PROJECT.md, SHA-256 32a089f5781b37bc32722f518c1532d123583bacea0ab8462e3af91c0fab09e3; Autodoc/autoloop scoped preapproval. Owner reviewed scope, dependencies, content boundaries and local Markdown links/spacing.
+
+## Pending transitions
+
+Publish/read back the owning completion commit, then close/read back its same DOCS issue before dependent work. No implementation activation or package QC is authorized.
