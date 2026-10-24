@@ -17,6 +17,8 @@
 | Hold/lock state | Engine-owned Hold slot, per-piece eligibility and grounded deadline | Engine commands and snapshot fields | Swap/spawn failures and exact deadline boundaries |
 | Ghost visibility | Whole-footprint midline predicate; never alters projection | visibleGhost(cells, policy) | All-upper, straddling and all-lower cases |
 | Penetration rules | Engine-owned mode/inventory; landing-policy scan and safe adjustment validation | activate(), landing(...,penetrator) | Buried gaps, transient overlap, illegal terminal states and bonus cap |
+| Settings model | Defaults and six validated selections; lock policy snapshot at spawn | get(), set(key,value), subscribe() | Live switches and next-piece policies |
+| Settings/preview view | Labeled selects, non-consuming next preview and Hold availability | Settings notifications plus engine snapshot | Focus isolation and visible control/state agreement |
 
 ## Collaboration and ownership
 
@@ -27,3 +29,5 @@ Restart resets engine-owned gameplay state and clock anchors; it does not instal
 The engine owns held piece, Hold availability, active orientation and lock deadline. Landing projection is pure and shared by ghost/drop. A swap creates a new active spawn transaction, while Hold-use eligibility remains consumed until lock. Lock timing does not live in setTimeout callbacks.
 
 Penetrator mode and bonus count belong only to the engine. Placement/landing helpers receive mode explicitly; they do not spend bonuses. Rendering reads mode rather than guessing from shape color. Lock/clear awards inventory before the next spawn and resets mode.
+
+Settings own selections; each active piece owns its captured locking policies. A Hold replacement is a spawn for policy capture but does not restore Hold eligibility. The preview reads the next queue item without consumption.
