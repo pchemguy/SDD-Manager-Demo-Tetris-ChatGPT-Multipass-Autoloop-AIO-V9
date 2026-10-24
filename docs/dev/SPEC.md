@@ -120,11 +120,21 @@ Under failed-down general locking, lock only on a failed gravity or soft-down at
 
 Acceptance: change both policies while grounded, observe unchanged active timing, then verify new policies after spawn/Hold/restart. Test general-policy × hard-drop-policy combinations for ordinary and penetrating pieces, zero-distance drops and disabled Space.
 
-## C-03 — Page-session settings
+## S-01 — Independent startup resolution
 
-Keep selections only in the current in-memory page instance. Do not read/write configuration cookies, URL parameters, localStorage or sessionStorage. A page reload restores all C-01 defaults. Restart without reload retains selections.
+Use the C-01 keys for query parameters and cookie names prefixed tetris_ (for example ghost and tetris_ghost). Tokens are exact case-sensitive strings after normal URL decoding. Empty/unknown/case-mismatched values are invalid. If a query key repeats, use its last occurrence and validate only that occurrence. Decode cookie values safely; malformed encoding is invalid. For duplicate same-name cookies use the first observed value to avoid non-deterministic merges; document the limitation that other paths may shadow app-owned cookies.
 
-Acceptance: changing settings and restarting preserves choices; reloading restores defaults and performs no configuration persistence writes.
+Resolve each setting independently: valid explicit URL token, else valid cookie, else default. Invalid URL values do not overwrite a valid cookie. Missing query parameters preserve cookie choices. Invalid cookies do not contaminate other settings. Apply the entire resolved settings snapshot before the first piece spawns, so initial lock-policy capture is correct. Save each valid explicit URL token to its corresponding cookie, including defaults, without writing cookies for omitted/invalid URL keys merely because resolution used a default. Startup must not add omitted parameters or normalize unrelated fields.
+
+Acceptance: mixed sources across all six keys; valid explicit default overriding a non-default cookie; omitted keys retaining cookies; invalid URL with valid cookie; invalid cookie/default; duplicate and malformed inputs; first-spawn policy agreement.
+
+## S-02 — Writes, URL and failure behavior
+
+On each player setting change, validate and apply the selection in memory, write its cookie, and set exactly one corresponding query parameter using history.replaceState without navigation. Set collapses duplicates for that key. Preserve unrelated query parameters, their values, other settings’ parameters and the fragment; equivalent URL encoding may be normalized by URLSearchParams. Cookie and URL writes are attempted independently, so failure of either cannot skip the other.
+
+Cookies contain only canonical setting tokens, use Path=/, SameSite=Lax, a 365-day Max-Age, no Domain, and Secure on HTTPS. Cookie-read/write or History API errors leave the selected in-memory value effective and display a non-blocking persistence warning. Detect silent cookie-write rejection by reading back the selected cookie; a URL write exception also warns. Read failures treat the affected source as unavailable and continue resolution. No persistent gameplay board, score, Hold slot or bonus inventory is stored. Reload/reopen restores configuration according to S-01, not prior gameplay.
+
+Acceptance: all six setting round-trips across reload, explicit default write, independent write failures, blocked cookies, history exceptions, fragment/unrelated fields and retained omitted-cookie values are browser/adapter scenarios.
 
 ## Q-01 — Quality, delivery and verification
 
