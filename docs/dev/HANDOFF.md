@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: main preparation initialization, DOCS-001. Recover subsequent state from Git and the preparation owner before continuing.
+Checkpoint: main preparation, pass 1 DOCS-008 complete locally; publication/closure below require confirmation. Recover subsequent state from Git and the preparation owner before continuing.
 
 ## Workflow and sources
 
@@ -11,7 +11,7 @@ Checkpoint: main preparation initialization, DOCS-001. Recover subsequent state 
 ## Scope and human decisions
 
 - User authorizes six cumulative documentation scopes in autodoc/autoloop; strict delivery preservation by default.
-- First PROJECT approval pending; later PROJECT approvals waived and later document checkpoints preapproved under selected mode. Proposals and cross-scope assumptions remain unaccepted until presented first approval.
+- First PROJECT and presented interaction choices accepted by user Approve to proposal c7424e990408d5c6fd168240121ed94fe092d925. Later PROJECT approvals waived and later document checkpoints preapproved under selected mode; new in-scope decisions delegated.
 - Exact stop: final pass DOCS-008, before package QC, documentation integration and implementation.
 - Tracking enabled by root AGENTS.md: verified sdd-docs-main milestone 1 and DOCS-001–009 issues 1–9. Push and exact remote readback after every owned commit. Standard reporting after Explicit bootstrap.
 
@@ -24,6 +24,7 @@ Checkpoint: main preparation initialization, DOCS-001. Recover subsequent state 
 
 ## Pending work and next action
 
-- Initialization commit publication and issue 1 closure require confirmation after this snapshot.
-- Next eligible work: PROJECT proposal, then human approval; do not start architecture before acceptance.
+- Current pass: 1, Playable classic baseline. Governing scope/decisions and exact evidence remain in DOCS_PREPARATION.
+- Publish/read back this DOCS-008 completion commit, then close/read back issue 8. Issue 9 and sdd-docs-main remain open.
+- Next eligible action: authorized autoloop reset to the next predefined scope; retain documents/ranges, uncheck DOCS-002–009 and reopen same issues before document revisions.
 - No game implementation or product release exists.
